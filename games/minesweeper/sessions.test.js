@@ -1,0 +1,14 @@
+﻿import test from 'node:test';
+import assert from 'node:assert/strict';
+import {SessionStore,sessionKey,validateSession} from './sessions.js';
+import {createBoard} from './engine.js';
+function storage(){const map=new Map();return {map,getItem:k=>map.get(k)||null,setItem:(k,v)=>map.set(k,v)};}
+function entry(level){return {level,elapsedMs:12345,board:createBoard(0,[8,11,15][level]),savedAt:new Date().toISOString()};}
+test('three difficulty slots persist and restore independently',()=>{const s=storage(),store=new SessionStore(s);for(let level=0;level<3;level++)store.stage(level,entry(level));assert.equal(store.flush(),true);const restored=new SessionStore(s);for(let level=0;level<3;level++){assert.equal(restored.get(level).elapsedMs,12345);assert.equal(restored.get(level).board.filter(c=>c.mine).length,[8,11,15][level]);}});
+test('snapshots and returned saves do not share mutable board cells',()=>{const store=new SessionStore(storage()),value=entry(0);store.stage(0,value);value.board[0].open=true;const copy=store.get(0);assert.equal(copy.board[0].open,false);copy.board[0].known=true;assert.equal(store.get(0).board[0].known,false);});
+test('removing a finished round preserves other difficulties',()=>{const s=storage(),store=new SessionStore(s);for(let i=0;i<3;i++)store.stage(i,entry(i));store.remove(1);store.flush();const restored=new SessionStore(s);assert.ok(restored.get(0));assert.equal(restored.get(1),null);assert.ok(restored.get(2));});
+test('invalid clues, opened mines and poisoned safe cells are rejected',()=>{for(const mutate of [v=>v.board[0].number=8,v=>v.board.find(c=>c.mine).open=true,v=>v.board.find(c=>!c.mine).known=true,v=>v.elapsedMs=-1]){const value=entry(0);mutate(value);assert.equal(validateSession(value,0),null);}});
+test('completed boards cannot be resumed',()=>{const value=entry(0);value.board.forEach(c=>c.open=!c.mine);assert.equal(validateSession(value,0),null);});
+test('unstarted board and time survive without inventing a layout',()=>{const store=new SessionStore(storage());store.stage(2,{...entry(2),board:null});assert.equal(store.get(2).board,null);assert.equal(store.get(2).elapsedMs,12345);});
+test('corrupt slot does not discard valid sibling saves',()=>{const s=storage();s.map.set(sessionKey,JSON.stringify({version:1,slots:{0:entry(0),1:{invalid:true},2:entry(2)}}));const store=new SessionStore(s);assert.ok(store.get(0));assert.equal(store.get(1),null);assert.ok(store.get(2));});
+test('write failure is reported and in-memory progress is retained for retry',()=>{const s=storage(),store=new SessionStore(s);store.stage(0,entry(0));s.setItem=()=>{throw Error('QuotaExceeded');};assert.equal(store.flush(),false);assert.match(store.lastError.message,/Quota/);assert.ok(store.get(0));s.setItem=(k,v)=>s.map.set(k,v);assert.equal(store.flush(),true);assert.equal(store.lastError,null);});

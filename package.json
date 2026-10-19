@@ -1,0 +1,10 @@
+{
+  "name": "mini-games",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "test": "npm --prefix games/minesweeper test && node games/jellyfish/tests/physics.cjs",
+    "test:minesweeper": "npm --prefix games/minesweeper test",
+    "test:jellyfish": "node games/jellyfish/tests/physics.cjs"
+  }
+}

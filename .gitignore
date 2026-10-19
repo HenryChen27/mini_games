@@ -11,3 +11,7 @@ dist/
 
 # Local reference videos and test recordings; never ship in the game.
 *.mp4
+
+# Local promotional footage and staging directories.
+video/
+*-promo/

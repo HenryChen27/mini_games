@@ -1,0 +1,10 @@
+﻿import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createBoard,neighbors,deduce} from './engine.js';
+test('first click and neighbors safe at every difficulty',()=>{for(let i=0;i<64;i++)for(const count of [8,11,15]){const b=createBoard(i,count);assert.equal(b.filter(c=>c.mine).length,count);for(const j of [i,...neighbors(i)])assert.equal(b[j].mine,false);for(let j=0;j<64;j++)assert.equal(b[j].number,neighbors(j).filter(k=>b[k].mine).length);}});
+const blank=()=>Array.from({length:64},()=>({open:false}));
+test('no clues means no hints',()=>assert.deepEqual(deduce(blank()).mines,[]));
+test('all closed neighbors are returned at once, including already poisoned cells',()=>{const v=blank();v[0]={open:true,number:3};v[1].known=true;assert.deepEqual(deduce(v).mines.sort((a,b)=>a-b),[1,8,9]);});
+test('only the requested equality rule is used, with no subset or global inference',()=>{const v=blank();v[0]={open:true,number:1};v[1]={open:true,number:1};assert.deepEqual(deduce(v).mines,[]);});
+test('multiple qualifying clues are combined and deduplicated',()=>{const v=blank();v[0]={open:true,number:3};v[63]={open:true,number:3};assert.deepEqual(deduce(v).mines.sort((a,b)=>a-b),[1,8,9,54,55,62]);});
+test('every hint agrees with random real boards',()=>{for(let trial=0;trial<150;trial++){const b=createBoard(trial%64,[8,11,15][trial%3]);const v=b.map(c=>({open:!c.mine&&Math.random()<.65,number:c.number}));for(const i of deduce(v).mines)assert.ok(b[i].mine);}});

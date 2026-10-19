@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "games": [
+    {
+      "id": "jellyfish",
+      "name": "合成大水母",
+      "version": "2.5.2",
+      "path": "games/jellyfish",
+      "archive": "Jellyfish-game.zip",
+      "runtime": "system-webview"
+    },
+    {
+      "id": "minesweeper",
+      "name": "蚀骨赠礼 · 扫雷",
+      "version": "1.0.0",
+      "path": "games/minesweeper",
+      "archive": "Minesweeper-game.zip",
+      "runtime": "system-webview"
+    }
+  ]
+}

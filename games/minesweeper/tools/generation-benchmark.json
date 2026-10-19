@@ -1,0 +1,72 @@
+{
+  "environment": "Node v22.18.0 / win32 x64",
+  "samplesPerDifficulty": 400,
+  "results": [
+    {
+      "total": 8,
+      "guessBoards": 0,
+      "fallbacks": 0,
+      "computeMs": {
+        "mean": 0.2314479999999998,
+        "p95": 0.49799999999999045,
+        "max": 1.04849999999999
+      },
+      "roundTripMs": {
+        "mean": 0.33278175000000076,
+        "p95": 0.6313999999999993,
+        "max": 1.1518000000000086
+      },
+      "attempts": {
+        "mean": 1.1725,
+        "p95": 2,
+        "max": 4
+      }
+    },
+    {
+      "total": 11,
+      "guessBoards": 80,
+      "fallbacks": 0,
+      "computeMs": {
+        "mean": 1.0160542500000014,
+        "p95": 4.9617000000000075,
+        "max": 17.302099999999996
+      },
+      "roundTripMs": {
+        "mean": 1.1197152500000014,
+        "p95": 5.09190000000001,
+        "max": 17.473700000000008
+      },
+      "attempts": {
+        "mean": 5.91,
+        "p95": 29,
+        "max": 110
+      }
+    },
+    {
+      "total": 15,
+      "guessBoards": 160,
+      "fallbacks": 0,
+      "computeMs": {
+        "mean": 2.766672250000002,
+        "p95": 10.813000000000102,
+        "max": 28.15370000000007
+      },
+      "roundTripMs": {
+        "mean": 2.8960344999999976,
+        "p95": 10.99070000000006,
+        "max": 28.38059999999996
+      },
+      "attempts": {
+        "mean": 20.2625,
+        "p95": 79,
+        "max": 205
+      }
+    }
+  ],
+  "coldWorkerRoundTripMs": 38.8334,
+  "heartbeat": {
+    "intervalMs": 5,
+    "ticks": 262,
+    "maxGapMs": 17.9683
+  }
+}

@@ -1,60 +1,60 @@
-# 合成大水母
+# 小游戏合集
 
-<p align="center"><img src="assets/jellyfish/fish5.png" width="96" alt="蓝水母"></p>
-<p align="center">轻轻放下，让两只相同的水母变成更大的一只。</p>
-<p align="center"><a href="https://github.com/HenryChen27/crypticNotes">搭配加页手记地图助手</a> · <a href="https://github.com/HenryChen27/Jellyfish/releases">下载游戏资源</a></p>
+集中维护独立小游戏，每款游戏保留自己的源码、资源、测试和版本。
 
-![水母与海底开场](docs/images/title.png)
+| 游戏 | 源码与说明 | 游戏版本 |
+| --- | --- | --- |
+| 合成大水母 | [games/jellyfish](games/jellyfish) | 2.5.2 |
+| 蚀骨赠礼 · 扫雷 | [games/minesweeper](games/minesweeper) | 1.0.0 |
 
-一个用 HTML、Canvas 和 Matter.js 制作的水母合成小游戏。水母会呼吸、晃动、碰撞与合成；气泡过场、海底背景、音乐和音效一起构成游戏画面。支持鼠标、触摸和键盘，不需要安装 Node.js 依赖。
+[下载资源包](https://github.com/HenryChen27/mini_games/releases/latest) · [加页手记地图助手](https://github.com/HenryChen27/crypticNotes)
 
-## 怎么玩
+## 运行
 
-![游戏画面](docs/images/game.png)
+在仓库根目录执行 `python -m http.server 8000`，打开 http://127.0.0.1:8000/，选择游戏。两款游戏均无需安装运行时依赖。扫雷也可在 `games/minesweeper` 执行 `npm start`，访问 http://127.0.0.1:5173/。
 
-- 鼠标或触摸移动抓手，松开投放水母。
-- 左右方向键移动，Enter 或下方向键投放。
-- 相同等级的水母相遇会合成，注意顶部危险区域。
-- 右下角齿轮调整背景音乐、音效音量；左下角的独立按钮可重新开始。
+从旧目录切换到新网址后，浏览器存档是否保留取决于是否仍为同一个来源（协议、主机、端口），不要清除网站数据。宿主的游戏 id 和资源包内 `game/` 结构保持不变。
 
-浏览器可能要求首次点击或按键后才能播放声音。
+## 目录
 
-## 存档与个人记录
+- `games/<id>/`：各游戏完整源码、素材、说明与测试。
+- `games.json`：游戏 id、版本、源码目录和资源包名称。
+- `scripts/`：共享打包和发布脚本。
+- `index.html`：本地网页合集入口。
+- `dist/`：本地生成的发布文件，不提交 Git。
 
-重新打开游戏后可选择继续存档或新开一局。游戏过程中在投放、合成与危险状态变化时保存，定期兜底保存；危险倒计时不会因中断而重置。
+参考录像和本地宣传场景不入库、不打包。扫雷源码保留原始静态素材，下载包只带运行需要的文件。
 
-结算显示本局成绩与个人记录，排行榜是本机可见的个人排行，不是在线比赛。进度、成绩与声音设置保存在本地；清除浏览器网站数据会删除浏览器版记录。
+## 检查
 
-![个人成绩](docs/images/results.png)
-
-## 本地运行
-
-在项目目录执行：
+需要 Node.js；无须安装 npm 依赖：
 
 ```sh
-python -m http.server 8000
+npm test
 ```
 
-打开 `http://localhost:8000`。使用本地 HTTP 服务比直接双击 HTML 更适合加载资源和保存记录，无需构建步骤。
+水母的浏览器检查位于 `games/jellyfish/tests/`，需要 Python、Playwright 和 Chrome。合集资源包检查：
 
-## 在地图助手里玩
+```sh
+python scripts/check_packages.py dist/mini-games-v1.0.0
+```
 
-[加页手记地图助手](https://github.com/HenryChen27/crypticNotes) 提供可选下载入口，以悬浮窗口运行，不另开浏览器页面。小游戏资源包、启动器与存档分别管理，删除资源包不等于清空存档。
+## 打包与发布
 
-宿主提供全屏／恢复窗口、最小化与关闭按钮。手机后台用蓝水母替换悬浮球，双击恢复游戏，单击打开插件设置。可用功能取决于安装的插件版本；游戏仓库本身不负责系统窗口管理。
+合集发布版本与各游戏版本独立。先在 `games.json` 更新被修改游戏的版本，再打合集包。兼容目录应含上一版的三个 `GameLauncher-*.zip`、`native-desktop-games.json` 和 `desktop-games.json`。
 
-插件采用系统网页引擎承载游戏。游戏的玩法、界面、音视频资源仍来自这个仓库，宿主只负责窗口和安全存档通信。
+```sh
+python scripts/package_release.py --version 1.0.0 --compatibility-dir /path/to/previous-release
+```
 
-## 项目目录
+生成水母与扫雷的独立 ZIP、合集 `games.json`、校验清单，以及兼容原水母宿主的两个旧清单和三个启动器。扫雷包解压后在 `game/` 执行 `npm start` 即可游玩；若嵌入宿主，请使用扫雷 README 中的 `MinesweeperGame` 保存接口。附带的旧原生启动器仍用于水母，不能当作扫雷启动器。
 
-| 目录／文件 | 内容 |
-| --- | --- |
-| `index.html` | 游戏入口 |
-| `js/` | 物理、合成、动画、存档与界面逻辑 |
-| `css/` | 样式 |
-| `assets/` | 图片、视频、声音和字体 |
-| `tests/` | 验证脚本与效果预览 |
+确认检查通过后，把发布说明写入 `dist/mini-games-v<版本>/release-notes.md`，提交推送，再运行：
 
-修改游戏请在这里更新源文件，再重新生成游戏资源包。插件仓库里的宿主改动不会自动反向修改这个游戏仓库。
+```powershell
+./scripts/publish_release.ps1 -Version 1.0.0
+```
 
-素材说明见 `assets/assets.txt`、`assets/fonts/README.txt` 与 `assets/audio/SOURCES.md`。作者：[被诅咒的无名布偶](https://space.bilibili.com/3747565201787057/)。
+发布脚本先创建草稿，上传并核对全部附件后才公开。旧 `desktop-v*` 发布保留，原水母下载清单的文件名和结构保持兼容；新增多游戏宿主应使用合集 `games.json`，按游戏 id 选择包。
+
+素材、作者与玩法说明见各游戏 README。

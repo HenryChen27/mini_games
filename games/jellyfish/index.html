@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>合成大水母</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="saveShade" class="save-shade" hidden aria-hidden="true"></div>
+  <section id="saveChoice" class="save-choice" hidden aria-label="继续存档或开始新游戏">
+    <h2>发现未完成的游戏</h2>
+    <div><button id="continueSave" type="button">继续游戏</button><button id="newGame" type="button">新游戏</button></div>
+  </section>
+  <section id="restartChoice" class="save-choice" hidden aria-label="确认重新开始">
+    <h2>是否重新开始？</h2>
+    <div><button id="confirmRestart" type="button">确认</button><button id="cancelRestart" type="button">取消</button></div>
+  </section>
+  <aside class="settings" aria-label="游戏设置">
+    <button id="settingsToggle" class="settings-toggle" type="button" aria-label="设置" title="游戏设置" aria-expanded="false" aria-controls="settingsPanel">
+      <canvas id="settingsGear" width="92" height="92" aria-hidden="true"></canvas>
+    </button>
+    <section id="settingsPanel" class="settings-panel" aria-labelledby="settingsHeading" hidden>
+      <div class="settings-heading"><h2 id="settingsHeading">游戏设置</h2><span>声音设置</span></div>
+      <label for="musicVolume">背景音乐 <output id="musicVolumeValue"></output></label>
+      <div class="chalk-slider"><span class="chalk-slider-track" aria-hidden="true"><span class="chalk-slider-fill"></span></span><input id="musicVolume" type="range" min="0" max="1" step="0.01"></div>
+      <label for="effectsVolume">游戏音效 <output id="effectsVolumeValue"></output></label>
+      <div class="chalk-slider"><span class="chalk-slider-track" aria-hidden="true"><span class="chalk-slider-fill"></span></span><input id="effectsVolume" type="range" min="0" max="1" step="0.01"></div>
+    </section>
+  </aside>
+
+  <script src="js/matter.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/planck.min.js"></script>
+  <script src="js/native-physics.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/jellyfish-animation.js"></script>
+  <script src="js/bubble-transition.js"></script>
+  <script src="js/opening-scene.js"></script>
+  <script src="js/chalk-ui.js"></script>
+  <script src="js/ui-transitions.js"></script>
+  <script src="js/session-save.js"></script>
+  <script src="js/end-scene.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
