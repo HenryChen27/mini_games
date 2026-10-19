@@ -64,13 +64,23 @@ def main():
         entry['url'] = base + '/' + asset.name
     native['game'] = {k: catalog['games']['jellyfish'][k] for k in ['version', 'size', 'sha256', 'url']}
     legacy = json.loads((previous / 'desktop-games.json').read_text(encoding='utf-8-sig'))
+    legacy_assets = []
     for entry in legacy['packages'].values():
-        entry['url'] = entry['url'].replace('HenryChen27/Jellyfish', repository)
+        name = entry['url'].rsplit('/', 1)[1]
+        asset = previous / name
+        if not asset.is_file():
+            raise FileNotFoundError(f'Legacy package required before pruning old releases: {asset}')
+        assert asset.stat().st_size == entry['size'] and digest(asset) == entry['sha256']
+        target = output / name
+        if asset.resolve() != target.resolve():
+            shutil.copy2(asset, target)
+        entry['url'] = base + '/' + name
+        legacy_assets.append(name)
     for name, data in [('games.json', catalog), ('native-desktop-games.json', native), ('desktop-games.json', legacy)]:
         (output / name).write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     assets = [g['archive'] for g in json.loads((ROOT / 'games.json').read_text(encoding='utf-8'))['games']]
     assets += [f'GameLauncher-{platform}.zip' for platform in native['launchers']]
-    assets += ['games.json', 'native-desktop-games.json', 'desktop-games.json']
+    assets += ['games.json', 'native-desktop-games.json', 'desktop-games.json'] + legacy_assets
     (output / 'SHA256SUMS.txt').write_text(''.join(f'{digest(output / name)}  {name}\n' for name in sorted(assets)), encoding='utf-8')
     print(output)
 

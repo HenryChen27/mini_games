@@ -41,7 +41,7 @@ python scripts/check_packages.py dist/mini-games-v1.0.0
 
 ## 打包与发布
 
-合集发布版本与各游戏版本独立。先在 `games.json` 更新被修改游戏的版本，再打合集包。兼容目录应含上一版的三个 `GameLauncher-*.zip`、`native-desktop-games.json` 和 `desktop-games.json`。
+合集发布版本与各游戏版本独立。先在 `games.json` 更新被修改游戏的版本，再打合集包。兼容目录应含上一版的三个 `GameLauncher-*.zip`、三个 `Jellyfish-<平台>.zip` 桌面整包、`native-desktop-games.json` 和 `desktop-games.json`。
 
 ```sh
 python scripts/package_release.py --version 1.0.0 --compatibility-dir /path/to/previous-release
@@ -55,6 +55,6 @@ python scripts/package_release.py --version 1.0.0 --compatibility-dir /path/to/p
 ./scripts/publish_release.ps1 -Version 1.0.0
 ```
 
-发布脚本先创建草稿，上传并核对全部附件后才公开。旧 `desktop-v*` 发布保留，原水母下载清单的文件名和结构保持兼容；新增多游戏宿主应使用合集 `games.json`，按游戏 id 选择包。
+发布脚本先创建草稿，上传并核对全部附件后才公开。Release 只保留最新版，旧桌面整包一并附在最新版，原水母下载清单的文件名和结构保持兼容；新增多游戏宿主应使用合集 `games.json`，按游戏 id 选择包。
 
 素材、作者与玩法说明见各游戏 README。
