@@ -20,7 +20,7 @@
 
 部分历史素材生成或比对脚本需要原始 PSD、MOV 或参考视频，应先从本地备份恢复输入；运行游戏与规则测试不依赖这些原始文件。现有素材由项目提供，此次发布不更改其权属。
 
-合集源码位于 `games/mini-kitchen/`，游戏 id 为 `mini-kitchen`，版本 1.5.0。合集打包器生成 `BonbonKitchen-game.zip`，包内入口为 `game/index.html`，顶层 `package.json` 提供 id、runtime、version 元数据。
+合集源码位于 `games/mini-kitchen/`，游戏 id 为 `mini-kitchen`，版本 1.5.1。合集打包器生成 `BonbonKitchen-game.zip`，包内入口为 `game/index.html`，顶层 `package.json` 提供 id、runtime、version 元数据。
 
 ## 宿主接入
 

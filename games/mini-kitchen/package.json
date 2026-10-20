@@ -1,9 +1,10 @@
 {
   "name": "bonbon-little-kitchen",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
   "scripts": {
     "start": "python -m http.server 8080 --bind 127.0.0.1",
     "test": "node tests/engine.test.cjs && node tests/autoplay.test.cjs && node tests/autoplay-modes.test.cjs && node tests/save.test.cjs && node tests/free-fall.test.cjs"
-  }
+  },
+  "displayName": "邦邦小厨房"
 }

@@ -27,6 +27,9 @@ for game_id, game in catalog['games'].items():
             assert (target / name).resolve().is_relative_to(target.resolve())
             assert not name.endswith(('.mp4', '.test.js')) and '/tests/' not in name
         assert json.loads(z.read('package.json'))['id'] == game_id
+        if game_id == 'mini-kitchen':
+            assert json.loads(z.read('package.json'))['name'] == game['name']
+            assert json.loads(z.read('package.json'))['displayName'] == game['name']
         z.extractall(target)
 for line in (release / 'SHA256SUMS.txt').read_text().splitlines():
     sha, name = line.split('  ', 1)

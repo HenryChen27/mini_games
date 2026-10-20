@@ -57,7 +57,10 @@ def main():
                     z.writestr(name, html)
                 else:
                     z.write(file, name)
-            z.writestr('package.json', json.dumps({k: game[k] for k in ['id', 'runtime', 'version']}))
+            metadata = {k: game[k] for k in ['id', 'runtime', 'version']}
+            if game['id'] == 'mini-kitchen':
+                metadata.update(name=game['name'], displayName=game['name'])
+            z.writestr('package.json', json.dumps(metadata, ensure_ascii=False))
         with zipfile.ZipFile(archive) as z:
             assert z.testzip() is None
             assert 'game/index.html' in z.namelist()

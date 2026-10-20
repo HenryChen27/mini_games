@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | 合成大水母 | [games/jellyfish](games/jellyfish) | 2.5.2 |
 | 蚀骨赠礼 · 扫雷 | [games/minesweeper](games/minesweeper) | 1.0.0 |
-| 邦邦小厨房 | [games/mini-kitchen](games/mini-kitchen) | 1.5.0 |
+| 邦邦小厨房 | [games/mini-kitchen](games/mini-kitchen) | 1.5.1 |
 
 [下载资源包](https://github.com/HenryChen27/mini_games/releases/latest) · [加页手记地图助手](https://github.com/HenryChen27/crypticNotes)
 
