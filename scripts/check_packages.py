@@ -76,6 +76,23 @@ with sync_playwright() as p:
     page.wait_for_timeout(6000)
     assert not errors and not missing, (errors, missing)
     print('Jellyfish: loads all assets, retains Planck physics and disabled C shortcut, and starts normally.')
+    if 'mini-kitchen' in catalog['games']:
+        page.goto(base + '/mini-kitchen/game/')
+        page.wait_for_function('window.BonbonKitchen?.getSession().ready')
+        assert page.evaluate('BonbonRules.duration===90 && BonbonRules.frenzyAt===60')
+        assert page.locator('#dev-autoplay').count()==0
+        page.locator('#start').click()
+        page.wait_for_function("BonbonKitchen.getSession().phase==='playing'")
+        page.wait_for_timeout(1500)
+        page.keyboard.press('F1')
+        assert page.locator('.guide-card').count()==6
+        assert page.locator('#visual-rules img').evaluate_all('(items)=>items.every(im=>im.complete&&im.naturalWidth>0)')
+        page.keyboard.press('Escape')
+        assert page.evaluate("BonbonKitchen.performAction({kind:'ingredient',value:'water'})")
+        page.wait_for_timeout(3200)
+        assert page.evaluate("BonbonKitchen.getState().pots.some(p=>p.state==='ready')")
+        assert not errors and not missing, (errors, missing)
+        print('Kitchen: packaged assets/audio load, guide works, 90-second session cooks normally, developer bot excluded.')
     browser.close()
 server.shutdown()
 print('All package and catalog checks passed.')

@@ -1,0 +1,3059 @@
+{
+  "6": {
+    "dish": "corn_soup",
+    "src": "assets/fx/dish_6.png",
+    "size": [
+      441,
+      376
+    ],
+    "patch": {
+      "box": [
+        121,
+        47,
+        213,
+        155
+      ],
+      "rect": [
+        0,
+        0,
+        213,
+        155
+      ]
+    },
+    "parts": [
+      {
+        "name": "pepper_back",
+        "box": [
+          127,
+          70,
+          54,
+          67
+        ],
+        "amplitude": 2.25,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          215,
+          0,
+          54,
+          67
+        ],
+        "flightRect": [
+          271,
+          0,
+          54,
+          67
+        ]
+      },
+      {
+        "name": "corn",
+        "box": [
+          206,
+          49,
+          126,
+          112
+        ],
+        "amplitude": 3.2,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          327,
+          0,
+          126,
+          112
+        ],
+        "flightRect": [
+          0,
+          157,
+          126,
+          112
+        ]
+      },
+      {
+        "name": "kernel_left",
+        "box": [
+          142,
+          121,
+          49,
+          43
+        ],
+        "amplitude": 2.25,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          128,
+          157,
+          49,
+          43
+        ],
+        "flightRect": [
+          179,
+          157,
+          49,
+          43
+        ]
+      },
+      {
+        "name": "kernel_small",
+        "box": [
+          123,
+          142,
+          33,
+          33
+        ],
+        "amplitude": 2.25,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          230,
+          157,
+          33,
+          33
+        ],
+        "flightRect": [
+          265,
+          157,
+          33,
+          33
+        ]
+      },
+      {
+        "name": "pepper_front",
+        "box": [
+          245,
+          146,
+          64,
+          49
+        ],
+        "amplitude": 2.25,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          300,
+          157,
+          64,
+          49
+        ],
+        "flightRect": [
+          366,
+          157,
+          64,
+          49
+        ]
+      },
+      {
+        "name": "kernel_front",
+        "box": [
+          152,
+          169,
+          35,
+          31
+        ],
+        "amplitude": 2.25,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          432,
+          157,
+          35,
+          31
+        ],
+        "flightRect": [
+          469,
+          157,
+          35,
+          31
+        ]
+      }
+    ]
+  },
+  "12": {
+    "dish": "corn_soup",
+    "src": "assets/fx/dish_12.png",
+    "size": [
+      496,
+      423
+    ],
+    "patch": {
+      "box": [
+        136,
+        53,
+        239,
+        174
+      ],
+      "rect": [
+        0,
+        0,
+        239,
+        174
+      ]
+    },
+    "parts": [
+      {
+        "name": "pepper_back",
+        "box": [
+          143,
+          79,
+          60,
+          75
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          241,
+          0,
+          60,
+          75
+        ],
+        "flightRect": [
+          303,
+          0,
+          60,
+          75
+        ]
+      },
+      {
+        "name": "corn",
+        "box": [
+          232,
+          55,
+          141,
+          126
+        ],
+        "amplitude": 3.599092970521542,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          365,
+          0,
+          141,
+          126
+        ],
+        "flightRect": [
+          0,
+          176,
+          141,
+          126
+        ]
+      },
+      {
+        "name": "kernel_left",
+        "box": [
+          160,
+          136,
+          55,
+          48
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          143,
+          176,
+          55,
+          48
+        ],
+        "flightRect": [
+          200,
+          176,
+          55,
+          48
+        ]
+      },
+      {
+        "name": "kernel_small",
+        "box": [
+          138,
+          160,
+          37,
+          37
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          257,
+          176,
+          37,
+          37
+        ],
+        "flightRect": [
+          296,
+          176,
+          37,
+          37
+        ]
+      },
+      {
+        "name": "pepper_front",
+        "box": [
+          276,
+          165,
+          71,
+          54
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          335,
+          176,
+          71,
+          54
+        ],
+        "flightRect": [
+          408,
+          176,
+          71,
+          54
+        ]
+      },
+      {
+        "name": "kernel_front",
+        "box": [
+          171,
+          190,
+          39,
+          35
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          0,
+          304,
+          39,
+          35
+        ],
+        "flightRect": [
+          41,
+          304,
+          39,
+          35
+        ]
+      }
+    ]
+  },
+  "18": {
+    "dish": "corn_soup",
+    "src": "assets/fx/dish_18.png",
+    "size": [
+      551,
+      470
+    ],
+    "patch": {
+      "box": [
+        153,
+        60,
+        263,
+        191
+      ],
+      "rect": [
+        0,
+        0,
+        263,
+        191
+      ]
+    },
+    "parts": [
+      {
+        "name": "pepper_back",
+        "box": [
+          160,
+          89,
+          65,
+          81
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          265,
+          0,
+          65,
+          81
+        ],
+        "flightRect": [
+          332,
+          0,
+          65,
+          81
+        ]
+      },
+      {
+        "name": "corn",
+        "box": [
+          258,
+          62,
+          156,
+          138
+        ],
+        "amplitude": 3.9981859410430842,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          0,
+          193,
+          156,
+          138
+        ],
+        "flightRect": [
+          158,
+          193,
+          156,
+          138
+        ]
+      },
+      {
+        "name": "kernel_left",
+        "box": [
+          178,
+          152,
+          59,
+          52
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          316,
+          193,
+          59,
+          52
+        ],
+        "flightRect": [
+          377,
+          193,
+          59,
+          52
+        ]
+      },
+      {
+        "name": "kernel_small",
+        "box": [
+          155,
+          179,
+          39,
+          39
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          438,
+          193,
+          39,
+          39
+        ],
+        "flightRect": [
+          0,
+          333,
+          39,
+          39
+        ]
+      },
+      {
+        "name": "pepper_front",
+        "box": [
+          307,
+          182,
+          78,
+          60
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          41,
+          333,
+          78,
+          60
+        ],
+        "flightRect": [
+          121,
+          333,
+          78,
+          60
+        ]
+      },
+      {
+        "name": "kernel_front",
+        "box": [
+          191,
+          212,
+          41,
+          37
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          201,
+          333,
+          41,
+          37
+        ],
+        "flightRect": [
+          244,
+          333,
+          41,
+          37
+        ]
+      }
+    ]
+  },
+  "5": {
+    "dish": "carrot_soup",
+    "src": "assets/fx/dish_5.png",
+    "size": [
+      441,
+      377
+    ],
+    "patch": {
+      "box": [
+        113,
+        56,
+        219,
+        155
+      ],
+      "rect": [
+        0,
+        0,
+        219,
+        155
+      ]
+    },
+    "parts": [
+      {
+        "name": "leek",
+        "box": [
+          115,
+          58,
+          58,
+          79
+        ],
+        "amplitude": 2.25,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          221,
+          0,
+          58,
+          79
+        ],
+        "flightRect": [
+          281,
+          0,
+          58,
+          79
+        ]
+      },
+      {
+        "name": "carrot_back",
+        "box": [
+          174,
+          66,
+          65,
+          80
+        ],
+        "amplitude": 2.25,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          341,
+          0,
+          65,
+          80
+        ],
+        "flightRect": [
+          408,
+          0,
+          65,
+          80
+        ]
+      },
+      {
+        "name": "pea_back",
+        "box": [
+          233,
+          86,
+          31,
+          41
+        ],
+        "amplitude": 2.25,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          475,
+          0,
+          31,
+          41
+        ],
+        "flightRect": [
+          0,
+          157,
+          31,
+          41
+        ]
+      },
+      {
+        "name": "pea_right",
+        "box": [
+          291,
+          105,
+          39,
+          39
+        ],
+        "amplitude": 2.25,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          33,
+          157,
+          39,
+          39
+        ],
+        "flightRect": [
+          74,
+          157,
+          39,
+          39
+        ]
+      },
+      {
+        "name": "carrot_left",
+        "box": [
+          123,
+          120,
+          71,
+          71
+        ],
+        "amplitude": 2.25,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          115,
+          157,
+          71,
+          71
+        ],
+        "flightRect": [
+          188,
+          157,
+          71,
+          71
+        ]
+      },
+      {
+        "name": "carrot_right",
+        "box": [
+          237,
+          127,
+          92,
+          75
+        ],
+        "amplitude": 2.25,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          261,
+          157,
+          92,
+          75
+        ],
+        "flightRect": [
+          355,
+          157,
+          92,
+          75
+        ]
+      },
+      {
+        "name": "pea_front",
+        "box": [
+          212,
+          178,
+          33,
+          31
+        ],
+        "amplitude": 2.25,
+        "phase": 10.26,
+        "delay": 0.312,
+        "fallDuration": 0.48,
+        "rect": [
+          449,
+          157,
+          33,
+          31
+        ],
+        "flightRect": [
+          0,
+          234,
+          33,
+          31
+        ]
+      }
+    ]
+  },
+  "11": {
+    "dish": "carrot_soup",
+    "src": "assets/fx/dish_11.png",
+    "size": [
+      496,
+      424
+    ],
+    "patch": {
+      "box": [
+        127,
+        63,
+        246,
+        174
+      ],
+      "rect": [
+        0,
+        0,
+        246,
+        174
+      ]
+    },
+    "parts": [
+      {
+        "name": "leek",
+        "box": [
+          129,
+          65,
+          65,
+          89
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          248,
+          0,
+          65,
+          89
+        ],
+        "flightRect": [
+          315,
+          0,
+          65,
+          89
+        ]
+      },
+      {
+        "name": "carrot_back",
+        "box": [
+          196,
+          74,
+          73,
+          90
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          382,
+          0,
+          73,
+          90
+        ],
+        "flightRect": [
+          0,
+          176,
+          73,
+          90
+        ]
+      },
+      {
+        "name": "pea_back",
+        "box": [
+          262,
+          97,
+          35,
+          46
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          75,
+          176,
+          35,
+          46
+        ],
+        "flightRect": [
+          112,
+          176,
+          35,
+          46
+        ]
+      },
+      {
+        "name": "pea_right",
+        "box": [
+          327,
+          118,
+          44,
+          44
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          149,
+          176,
+          44,
+          44
+        ],
+        "flightRect": [
+          195,
+          176,
+          44,
+          44
+        ]
+      },
+      {
+        "name": "carrot_left",
+        "box": [
+          138,
+          135,
+          80,
+          80
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          241,
+          176,
+          80,
+          80
+        ],
+        "flightRect": [
+          323,
+          176,
+          80,
+          80
+        ]
+      },
+      {
+        "name": "carrot_right",
+        "box": [
+          267,
+          143,
+          103,
+          84
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          405,
+          176,
+          103,
+          84
+        ],
+        "flightRect": [
+          0,
+          268,
+          103,
+          84
+        ]
+      },
+      {
+        "name": "pea_front",
+        "box": [
+          238,
+          200,
+          37,
+          35
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 10.26,
+        "delay": 0.312,
+        "fallDuration": 0.48,
+        "rect": [
+          105,
+          268,
+          37,
+          35
+        ],
+        "flightRect": [
+          144,
+          268,
+          37,
+          35
+        ]
+      }
+    ]
+  },
+  "17": {
+    "dish": "carrot_soup",
+    "src": "assets/fx/dish_17.png",
+    "size": [
+      551,
+      471
+    ],
+    "patch": {
+      "box": [
+        143,
+        71,
+        270,
+        191
+      ],
+      "rect": [
+        0,
+        0,
+        270,
+        191
+      ]
+    },
+    "parts": [
+      {
+        "name": "leek",
+        "box": [
+          145,
+          73,
+          70,
+          97
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          272,
+          0,
+          70,
+          97
+        ],
+        "flightRect": [
+          344,
+          0,
+          70,
+          97
+        ]
+      },
+      {
+        "name": "carrot_back",
+        "box": [
+          218,
+          83,
+          79,
+          98
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          416,
+          0,
+          79,
+          98
+        ],
+        "flightRect": [
+          0,
+          193,
+          79,
+          98
+        ]
+      },
+      {
+        "name": "pea_back",
+        "box": [
+          290,
+          108,
+          39,
+          49
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          81,
+          193,
+          39,
+          49
+        ],
+        "flightRect": [
+          122,
+          193,
+          39,
+          49
+        ]
+      },
+      {
+        "name": "pea_right",
+        "box": [
+          365,
+          132,
+          46,
+          47
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          163,
+          193,
+          46,
+          47
+        ],
+        "flightRect": [
+          211,
+          193,
+          46,
+          47
+        ]
+      },
+      {
+        "name": "carrot_left",
+        "box": [
+          155,
+          151,
+          86,
+          86
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          259,
+          193,
+          86,
+          86
+        ],
+        "flightRect": [
+          347,
+          193,
+          86,
+          86
+        ]
+      },
+      {
+        "name": "carrot_right",
+        "box": [
+          297,
+          160,
+          113,
+          91
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          0,
+          293,
+          113,
+          91
+        ],
+        "flightRect": [
+          115,
+          293,
+          113,
+          91
+        ]
+      },
+      {
+        "name": "pea_front",
+        "box": [
+          266,
+          223,
+          39,
+          37
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 10.26,
+        "delay": 0.312,
+        "fallDuration": 0.48,
+        "rect": [
+          230,
+          293,
+          39,
+          37
+        ],
+        "flightRect": [
+          271,
+          293,
+          39,
+          37
+        ]
+      }
+    ]
+  },
+  "3": {
+    "dish": "soup",
+    "src": "assets/fx/dish_3.png",
+    "size": [
+      441,
+      376
+    ],
+    "patch": {
+      "box": [
+        128,
+        89,
+        183,
+        117
+      ],
+      "rect": [
+        0,
+        0,
+        183,
+        117
+      ]
+    },
+    "parts": [
+      {
+        "name": "red_back",
+        "box": [
+          130,
+          91,
+          43,
+          47
+        ],
+        "amplitude": 2.25,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          185,
+          0,
+          43,
+          47
+        ],
+        "flightRect": [
+          230,
+          0,
+          43,
+          47
+        ]
+      },
+      {
+        "name": "orange_back",
+        "box": [
+          223,
+          94,
+          39,
+          45
+        ],
+        "amplitude": 2.25,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          275,
+          0,
+          39,
+          45
+        ],
+        "flightRect": [
+          316,
+          0,
+          39,
+          45
+        ]
+      },
+      {
+        "name": "herb",
+        "box": [
+          201,
+          117,
+          43,
+          41
+        ],
+        "amplitude": 2.25,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          357,
+          0,
+          43,
+          41
+        ],
+        "flightRect": [
+          402,
+          0,
+          43,
+          41
+        ]
+      },
+      {
+        "name": "red_left",
+        "box": [
+          139,
+          146,
+          35,
+          37
+        ],
+        "amplitude": 2.25,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          447,
+          0,
+          35,
+          37
+        ],
+        "flightRect": [
+          0,
+          119,
+          35,
+          37
+        ]
+      },
+      {
+        "name": "red_front",
+        "box": [
+          225,
+          153,
+          51,
+          49
+        ],
+        "amplitude": 2.25,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          37,
+          119,
+          51,
+          49
+        ],
+        "flightRect": [
+          90,
+          119,
+          51,
+          49
+        ]
+      },
+      {
+        "name": "orange_right",
+        "box": [
+          274,
+          161,
+          35,
+          35
+        ],
+        "amplitude": 2.25,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          143,
+          119,
+          35,
+          35
+        ],
+        "flightRect": [
+          180,
+          119,
+          35,
+          35
+        ]
+      },
+      {
+        "name": "small_left",
+        "box": [
+          176,
+          169,
+          37,
+          35
+        ],
+        "amplitude": 2.25,
+        "phase": 10.26,
+        "delay": 0.312,
+        "fallDuration": 0.48,
+        "rect": [
+          217,
+          119,
+          37,
+          35
+        ],
+        "flightRect": [
+          256,
+          119,
+          37,
+          35
+        ]
+      }
+    ]
+  },
+  "9": {
+    "dish": "soup",
+    "src": "assets/fx/dish_9.png",
+    "size": [
+      496,
+      423
+    ],
+    "patch": {
+      "box": [
+        144,
+        100,
+        205,
+        131
+      ],
+      "rect": [
+        0,
+        0,
+        205,
+        131
+      ]
+    },
+    "parts": [
+      {
+        "name": "red_back",
+        "box": [
+          146,
+          102,
+          48,
+          53
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          207,
+          0,
+          48,
+          53
+        ],
+        "flightRect": [
+          257,
+          0,
+          48,
+          53
+        ]
+      },
+      {
+        "name": "orange_back",
+        "box": [
+          251,
+          106,
+          44,
+          50
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          307,
+          0,
+          44,
+          50
+        ],
+        "flightRect": [
+          353,
+          0,
+          44,
+          50
+        ]
+      },
+      {
+        "name": "herb",
+        "box": [
+          226,
+          132,
+          48,
+          46
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          399,
+          0,
+          48,
+          46
+        ],
+        "flightRect": [
+          449,
+          0,
+          48,
+          46
+        ]
+      },
+      {
+        "name": "red_left",
+        "box": [
+          156,
+          164,
+          40,
+          42
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          0,
+          133,
+          40,
+          42
+        ],
+        "flightRect": [
+          42,
+          133,
+          40,
+          42
+        ]
+      },
+      {
+        "name": "red_front",
+        "box": [
+          253,
+          172,
+          57,
+          55
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          84,
+          133,
+          57,
+          55
+        ],
+        "flightRect": [
+          143,
+          133,
+          57,
+          55
+        ]
+      },
+      {
+        "name": "orange_right",
+        "box": [
+          308,
+          181,
+          39,
+          39
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          202,
+          133,
+          39,
+          39
+        ],
+        "flightRect": [
+          243,
+          133,
+          39,
+          39
+        ]
+      },
+      {
+        "name": "small_left",
+        "box": [
+          198,
+          190,
+          41,
+          39
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 10.26,
+        "delay": 0.312,
+        "fallDuration": 0.48,
+        "rect": [
+          284,
+          133,
+          41,
+          39
+        ],
+        "flightRect": [
+          327,
+          133,
+          41,
+          39
+        ]
+      }
+    ]
+  },
+  "15": {
+    "dish": "soup",
+    "src": "assets/fx/dish_15.png",
+    "size": [
+      551,
+      470
+    ],
+    "patch": {
+      "box": [
+        161,
+        113,
+        226,
+        143
+      ],
+      "rect": [
+        0,
+        0,
+        226,
+        143
+      ]
+    },
+    "parts": [
+      {
+        "name": "red_back",
+        "box": [
+          163,
+          115,
+          52,
+          56
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          228,
+          0,
+          52,
+          56
+        ],
+        "flightRect": [
+          282,
+          0,
+          52,
+          56
+        ]
+      },
+      {
+        "name": "orange_back",
+        "box": [
+          280,
+          119,
+          46,
+          53
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          336,
+          0,
+          46,
+          53
+        ],
+        "flightRect": [
+          384,
+          0,
+          46,
+          53
+        ]
+      },
+      {
+        "name": "herb",
+        "box": [
+          252,
+          147,
+          52,
+          49
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          432,
+          0,
+          52,
+          49
+        ],
+        "flightRect": [
+          0,
+          145,
+          52,
+          49
+        ]
+      },
+      {
+        "name": "red_left",
+        "box": [
+          175,
+          183,
+          41,
+          45
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          54,
+          145,
+          41,
+          45
+        ],
+        "flightRect": [
+          97,
+          145,
+          41,
+          45
+        ]
+      },
+      {
+        "name": "red_front",
+        "box": [
+          282,
+          192,
+          62,
+          59
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          140,
+          145,
+          62,
+          59
+        ],
+        "flightRect": [
+          204,
+          145,
+          62,
+          59
+        ]
+      },
+      {
+        "name": "orange_right",
+        "box": [
+          341,
+          202,
+          44,
+          42
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          268,
+          145,
+          44,
+          42
+        ],
+        "flightRect": [
+          314,
+          145,
+          44,
+          42
+        ]
+      },
+      {
+        "name": "small_left",
+        "box": [
+          221,
+          212,
+          44,
+          42
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 10.26,
+        "delay": 0.312,
+        "fallDuration": 0.48,
+        "rect": [
+          360,
+          145,
+          44,
+          42
+        ],
+        "flightRect": [
+          406,
+          145,
+          44,
+          42
+        ]
+      }
+    ]
+  },
+  "4": {
+    "dish": "cooking",
+    "src": "assets/fx/dish_4.png",
+    "size": [
+      441,
+      376
+    ],
+    "patch": {
+      "box": [
+        120,
+        57,
+        189,
+        149
+      ],
+      "rect": [
+        0,
+        0,
+        189,
+        149
+      ]
+    },
+    "parts": [
+      {
+        "name": "leek",
+        "box": [
+          163,
+          59,
+          46,
+          81
+        ],
+        "amplitude": 2.25,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          191,
+          0,
+          46,
+          81
+        ],
+        "flightRect": [
+          239,
+          0,
+          46,
+          81
+        ]
+      },
+      {
+        "name": "pepper_back",
+        "box": [
+          200,
+          77,
+          54,
+          71
+        ],
+        "amplitude": 2.25,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          287,
+          0,
+          54,
+          71
+        ],
+        "flightRect": [
+          343,
+          0,
+          54,
+          71
+        ]
+      },
+      {
+        "name": "carrot",
+        "box": [
+          130,
+          83,
+          38,
+          79
+        ],
+        "amplitude": 2.25,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          399,
+          0,
+          38,
+          79
+        ],
+        "flightRect": [
+          439,
+          0,
+          38,
+          79
+        ]
+      },
+      {
+        "name": "tomato",
+        "box": [
+          232,
+          87,
+          75,
+          84
+        ],
+        "amplitude": 2.25,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          0,
+          151,
+          75,
+          84
+        ],
+        "flightRect": [
+          77,
+          151,
+          75,
+          84
+        ]
+      },
+      {
+        "name": "carrot_front",
+        "box": [
+          122,
+          149,
+          49,
+          54
+        ],
+        "amplitude": 2.25,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          154,
+          151,
+          49,
+          54
+        ],
+        "flightRect": [
+          205,
+          151,
+          49,
+          54
+        ]
+      },
+      {
+        "name": "pepper_front",
+        "box": [
+          204,
+          142,
+          47,
+          62
+        ],
+        "amplitude": 2.25,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          256,
+          151,
+          47,
+          62
+        ],
+        "flightRect": [
+          305,
+          151,
+          47,
+          62
+        ]
+      }
+    ]
+  },
+  "10": {
+    "dish": "cooking",
+    "src": "assets/fx/dish_10.png",
+    "size": [
+      496,
+      423
+    ],
+    "patch": {
+      "box": [
+        135,
+        64,
+        212,
+        167
+      ],
+      "rect": [
+        0,
+        0,
+        212,
+        167
+      ]
+    },
+    "parts": [
+      {
+        "name": "leek",
+        "box": [
+          183,
+          66,
+          52,
+          91
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          214,
+          0,
+          52,
+          91
+        ],
+        "flightRect": [
+          268,
+          0,
+          52,
+          91
+        ]
+      },
+      {
+        "name": "pepper_back",
+        "box": [
+          224,
+          87,
+          62,
+          79
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          322,
+          0,
+          62,
+          79
+        ],
+        "flightRect": [
+          386,
+          0,
+          62,
+          79
+        ]
+      },
+      {
+        "name": "carrot",
+        "box": [
+          146,
+          93,
+          42,
+          89
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          450,
+          0,
+          42,
+          89
+        ],
+        "flightRect": [
+          0,
+          169,
+          42,
+          89
+        ]
+      },
+      {
+        "name": "tomato",
+        "box": [
+          262,
+          98,
+          83,
+          94
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          44,
+          169,
+          83,
+          94
+        ],
+        "flightRect": [
+          129,
+          169,
+          83,
+          94
+        ]
+      },
+      {
+        "name": "carrot_front",
+        "box": [
+          137,
+          167,
+          55,
+          61
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          214,
+          169,
+          55,
+          61
+        ],
+        "flightRect": [
+          271,
+          169,
+          55,
+          61
+        ]
+      },
+      {
+        "name": "pepper_front",
+        "box": [
+          229,
+          160,
+          53,
+          69
+        ],
+        "amplitude": 2.5306122448979593,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          328,
+          169,
+          53,
+          69
+        ],
+        "flightRect": [
+          383,
+          169,
+          53,
+          69
+        ]
+      }
+    ]
+  },
+  "16": {
+    "dish": "cooking",
+    "src": "assets/fx/dish_16.png",
+    "size": [
+      551,
+      470
+    ],
+    "patch": {
+      "box": [
+        151,
+        74,
+        233,
+        182
+      ],
+      "rect": [
+        0,
+        0,
+        233,
+        182
+      ]
+    },
+    "parts": [
+      {
+        "name": "leek",
+        "box": [
+          205,
+          76,
+          55,
+          98
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          235,
+          0,
+          55,
+          98
+        ],
+        "flightRect": [
+          292,
+          0,
+          55,
+          98
+        ]
+      },
+      {
+        "name": "pepper_back",
+        "box": [
+          250,
+          97,
+          66,
+          87
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          349,
+          0,
+          66,
+          87
+        ],
+        "flightRect": [
+          417,
+          0,
+          66,
+          87
+        ]
+      },
+      {
+        "name": "carrot",
+        "box": [
+          163,
+          105,
+          45,
+          96
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          0,
+          184,
+          45,
+          96
+        ],
+        "flightRect": [
+          47,
+          184,
+          45,
+          96
+        ]
+      },
+      {
+        "name": "tomato",
+        "box": [
+          291,
+          110,
+          91,
+          102
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          94,
+          184,
+          91,
+          102
+        ],
+        "flightRect": [
+          187,
+          184,
+          91,
+          102
+        ]
+      },
+      {
+        "name": "carrot_front",
+        "box": [
+          153,
+          186,
+          59,
+          66
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          280,
+          184,
+          59,
+          66
+        ],
+        "flightRect": [
+          341,
+          184,
+          59,
+          66
+        ]
+      },
+      {
+        "name": "pepper_front",
+        "box": [
+          256,
+          179,
+          56,
+          75
+        ],
+        "amplitude": 2.811224489795918,
+        "phase": 8.55,
+        "delay": 0.26,
+        "fallDuration": 0.55,
+        "rect": [
+          402,
+          184,
+          56,
+          75
+        ],
+        "flightRect": [
+          0,
+          288,
+          56,
+          75
+        ]
+      }
+    ]
+  },
+  "38": {
+    "dish": "tomato_beef",
+    "src": "assets/fx/dish_38.png",
+    "size": [
+      496,
+      351
+    ],
+    "patch": {
+      "box": [
+        36,
+        70,
+        361,
+        226
+      ],
+      "rect": [
+        0,
+        0,
+        361,
+        226
+      ]
+    },
+    "parts": [
+      {
+        "name": "onion_back",
+        "box": [
+          43,
+          72,
+          103,
+          119
+        ],
+        "amplitude": 0.55,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          363,
+          0,
+          103,
+          119
+        ],
+        "flightRect": [
+          0,
+          228,
+          103,
+          119
+        ]
+      },
+      {
+        "name": "onion_front",
+        "box": [
+          38,
+          168,
+          82,
+          71
+        ],
+        "amplitude": 0.55,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          105,
+          228,
+          82,
+          71
+        ],
+        "flightRect": [
+          189,
+          228,
+          82,
+          71
+        ]
+      },
+      {
+        "name": "tomato",
+        "box": [
+          246,
+          123,
+          149,
+          161
+        ],
+        "amplitude": 0.55,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          273,
+          228,
+          149,
+          161
+        ],
+        "flightRect": [
+          0,
+          391,
+          149,
+          161
+        ]
+      },
+      {
+        "name": "garnish",
+        "box": [
+          175,
+          236,
+          89,
+          58
+        ],
+        "amplitude": 0.55,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          151,
+          391,
+          89,
+          58
+        ],
+        "flightRect": [
+          242,
+          391,
+          89,
+          58
+        ]
+      }
+    ]
+  },
+  "45": {
+    "dish": "tomato_beef",
+    "src": "assets/fx/dish_45.png",
+    "size": [
+      519,
+      368
+    ],
+    "patch": {
+      "box": [
+        38,
+        73,
+        377,
+        237
+      ],
+      "rect": [
+        0,
+        0,
+        377,
+        237
+      ]
+    },
+    "parts": [
+      {
+        "name": "onion_back",
+        "box": [
+          45,
+          75,
+          107,
+          125
+        ],
+        "amplitude": 0.5755040322580646,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          379,
+          0,
+          107,
+          125
+        ],
+        "flightRect": [
+          0,
+          239,
+          107,
+          125
+        ]
+      },
+      {
+        "name": "onion_front",
+        "box": [
+          40,
+          177,
+          85,
+          73
+        ],
+        "amplitude": 0.5755040322580646,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          109,
+          239,
+          85,
+          73
+        ],
+        "flightRect": [
+          196,
+          239,
+          85,
+          73
+        ]
+      },
+      {
+        "name": "tomato",
+        "box": [
+          258,
+          129,
+          155,
+          168
+        ],
+        "amplitude": 0.5755040322580646,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          283,
+          239,
+          155,
+          168
+        ],
+        "flightRect": [
+          0,
+          409,
+          155,
+          168
+        ]
+      },
+      {
+        "name": "garnish",
+        "box": [
+          183,
+          248,
+          93,
+          60
+        ],
+        "amplitude": 0.5755040322580646,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          157,
+          409,
+          93,
+          60
+        ],
+        "flightRect": [
+          252,
+          409,
+          93,
+          60
+        ]
+      }
+    ]
+  },
+  "52": {
+    "dish": "tomato_beef",
+    "src": "assets/fx/dish_52.png",
+    "size": [
+      564,
+      399
+    ],
+    "patch": {
+      "box": [
+        41,
+        79,
+        402,
+        257
+      ],
+      "rect": [
+        0,
+        0,
+        402,
+        257
+      ]
+    },
+    "parts": [
+      {
+        "name": "onion_back",
+        "box": [
+          49,
+          81,
+          117,
+          136
+        ],
+        "amplitude": 0.6254032258064517,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          0,
+          259,
+          117,
+          136
+        ],
+        "flightRect": [
+          119,
+          259,
+          117,
+          136
+        ]
+      },
+      {
+        "name": "onion_front",
+        "box": [
+          43,
+          191,
+          93,
+          80
+        ],
+        "amplitude": 0.6254032258064517,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          238,
+          259,
+          93,
+          80
+        ],
+        "flightRect": [
+          333,
+          259,
+          93,
+          80
+        ]
+      },
+      {
+        "name": "tomato",
+        "box": [
+          280,
+          140,
+          161,
+          183
+        ],
+        "amplitude": 0.6254032258064517,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          0,
+          397,
+          161,
+          183
+        ],
+        "flightRect": [
+          163,
+          397,
+          161,
+          183
+        ]
+      },
+      {
+        "name": "garnish",
+        "box": [
+          199,
+          268,
+          100,
+          66
+        ],
+        "amplitude": 0.6254032258064517,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          326,
+          397,
+          100,
+          66
+        ],
+        "flightRect": [
+          0,
+          582,
+          100,
+          66
+        ]
+      }
+    ]
+  },
+  "39": {
+    "dish": "potato_beef",
+    "src": "assets/fx/dish_39.png",
+    "size": [
+      509,
+      370
+    ],
+    "patch": {
+      "box": [
+        24,
+        89,
+        315,
+        215
+      ],
+      "rect": [
+        0,
+        0,
+        315,
+        215
+      ]
+    },
+    "parts": [
+      {
+        "name": "potato_back",
+        "box": [
+          198,
+          91,
+          70,
+          73
+        ],
+        "amplitude": 0.55,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          317,
+          0,
+          70,
+          73
+        ],
+        "flightRect": [
+          389,
+          0,
+          70,
+          73
+        ]
+      },
+      {
+        "name": "potato_left",
+        "box": [
+          26,
+          142,
+          60,
+          65
+        ],
+        "amplitude": 0.55,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          0,
+          217,
+          60,
+          65
+        ],
+        "flightRect": [
+          62,
+          217,
+          60,
+          65
+        ]
+      },
+      {
+        "name": "potato_small",
+        "box": [
+          104,
+          214,
+          75,
+          64
+        ],
+        "amplitude": 0.55,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          124,
+          217,
+          75,
+          64
+        ],
+        "flightRect": [
+          201,
+          217,
+          75,
+          64
+        ]
+      },
+      {
+        "name": "potato_front",
+        "box": [
+          228,
+          182,
+          109,
+          120
+        ],
+        "amplitude": 0.55,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          278,
+          217,
+          109,
+          120
+        ],
+        "flightRect": [
+          389,
+          217,
+          109,
+          120
+        ]
+      },
+      {
+        "name": "scallion",
+        "box": [
+          214,
+          155,
+          33,
+          30
+        ],
+        "amplitude": 0.55,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          0,
+          339,
+          33,
+          30
+        ],
+        "flightRect": [
+          35,
+          339,
+          33,
+          30
+        ]
+      }
+    ]
+  },
+  "46": {
+    "dish": "potato_beef",
+    "src": "assets/fx/dish_46.png",
+    "size": [
+      532,
+      386
+    ],
+    "patch": {
+      "box": [
+        26,
+        93,
+        328,
+        224
+      ],
+      "rect": [
+        0,
+        0,
+        328,
+        224
+      ]
+    },
+    "parts": [
+      {
+        "name": "potato_back",
+        "box": [
+          207,
+          95,
+          73,
+          76
+        ],
+        "amplitude": 0.574852652259332,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          330,
+          0,
+          73,
+          76
+        ],
+        "flightRect": [
+          405,
+          0,
+          73,
+          76
+        ]
+      },
+      {
+        "name": "potato_left",
+        "box": [
+          28,
+          148,
+          61,
+          68
+        ],
+        "amplitude": 0.574852652259332,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          0,
+          226,
+          61,
+          68
+        ],
+        "flightRect": [
+          63,
+          226,
+          61,
+          68
+        ]
+      },
+      {
+        "name": "potato_small",
+        "box": [
+          109,
+          224,
+          78,
+          66
+        ],
+        "amplitude": 0.574852652259332,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          126,
+          226,
+          78,
+          66
+        ],
+        "flightRect": [
+          206,
+          226,
+          78,
+          66
+        ]
+      },
+      {
+        "name": "potato_front",
+        "box": [
+          239,
+          190,
+          113,
+          125
+        ],
+        "amplitude": 0.574852652259332,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          286,
+          226,
+          113,
+          125
+        ],
+        "flightRect": [
+          0,
+          353,
+          113,
+          125
+        ]
+      },
+      {
+        "name": "scallion",
+        "box": [
+          224,
+          162,
+          34,
+          31
+        ],
+        "amplitude": 0.574852652259332,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          115,
+          353,
+          34,
+          31
+        ],
+        "flightRect": [
+          151,
+          353,
+          34,
+          31
+        ]
+      }
+    ]
+  },
+  "53": {
+    "dish": "potato_beef",
+    "src": "assets/fx/dish_53.png",
+    "size": [
+      578,
+      420
+    ],
+    "patch": {
+      "box": [
+        28,
+        101,
+        356,
+        244
+      ],
+      "rect": [
+        0,
+        0,
+        356,
+        244
+      ]
+    },
+    "parts": [
+      {
+        "name": "potato_back",
+        "box": [
+          225,
+          103,
+          79,
+          83
+        ],
+        "amplitude": 0.6245579567779962,
+        "phase": 0.0,
+        "delay": 0.0,
+        "fallDuration": 0.48,
+        "rect": [
+          358,
+          0,
+          79,
+          83
+        ],
+        "flightRect": [
+          0,
+          246,
+          79,
+          83
+        ]
+      },
+      {
+        "name": "potato_left",
+        "box": [
+          30,
+          161,
+          67,
+          74
+        ],
+        "amplitude": 0.6245579567779962,
+        "phase": 1.71,
+        "delay": 0.052,
+        "fallDuration": 0.515,
+        "rect": [
+          81,
+          246,
+          67,
+          74
+        ],
+        "flightRect": [
+          150,
+          246,
+          67,
+          74
+        ]
+      },
+      {
+        "name": "potato_small",
+        "box": [
+          118,
+          243,
+          85,
+          72
+        ],
+        "amplitude": 0.6245579567779962,
+        "phase": 3.42,
+        "delay": 0.104,
+        "fallDuration": 0.55,
+        "rect": [
+          219,
+          246,
+          85,
+          72
+        ],
+        "flightRect": [
+          306,
+          246,
+          85,
+          72
+        ]
+      },
+      {
+        "name": "potato_front",
+        "box": [
+          259,
+          207,
+          123,
+          136
+        ],
+        "amplitude": 0.6245579567779962,
+        "phase": 5.13,
+        "delay": 0.156,
+        "fallDuration": 0.48,
+        "rect": [
+          0,
+          331,
+          123,
+          136
+        ],
+        "flightRect": [
+          125,
+          331,
+          123,
+          136
+        ]
+      },
+      {
+        "name": "scallion",
+        "box": [
+          243,
+          176,
+          37,
+          34
+        ],
+        "amplitude": 0.6245579567779962,
+        "phase": 6.84,
+        "delay": 0.208,
+        "fallDuration": 0.515,
+        "rect": [
+          250,
+          331,
+          37,
+          34
+        ],
+        "flightRect": [
+          289,
+          331,
+          37,
+          34
+        ]
+      }
+    ]
+  }
+}

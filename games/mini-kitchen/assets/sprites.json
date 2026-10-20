@@ -1,0 +1,1468 @@
+{
+  "000_background": {
+    "src": "assets/sprites/000_background.png",
+    "box": [
+      0,
+      -15,
+      4702,
+      2188
+    ],
+    "name": "background",
+    "contentBox": [
+      0,
+      0,
+      4702,
+      2203
+    ]
+  },
+  "002_pot": {
+    "src": "assets/sprites/002_pot.png",
+    "box": [
+      1501,
+      714,
+      1958,
+      1071
+    ],
+    "name": "pot",
+    "contentBox": [
+      23,
+      33,
+      401,
+      313
+    ]
+  },
+  "003_boiling_soup": {
+    "src": "assets/sprites/003_boiling_soup.png",
+    "box": [
+      1515,
+      722,
+      1956,
+      1098
+    ],
+    "name": "boiling_soup",
+    "contentBox": [
+      19,
+      25,
+      400,
+      329
+    ]
+  },
+  "004_soup": {
+    "src": "assets/sprites/004_soup.png",
+    "box": [
+      1516,
+      722,
+      1957,
+      1098
+    ],
+    "name": "soup",
+    "contentBox": [
+      18,
+      25,
+      401,
+      329
+    ]
+  },
+  "005_carrot_soup": {
+    "src": "assets/sprites/005_carrot_soup.png",
+    "box": [
+      1516,
+      721,
+      1957,
+      1098
+    ],
+    "name": "carrot_soup",
+    "contentBox": [
+      19,
+      26,
+      400,
+      329
+    ]
+  },
+  "006_corn_soup": {
+    "src": "assets/sprites/006_corn_soup.png",
+    "box": [
+      1516,
+      722,
+      1957,
+      1098
+    ],
+    "name": "corn_soup",
+    "contentBox": [
+      19,
+      22,
+      400,
+      332
+    ]
+  },
+  "008_pot": {
+    "src": "assets/sprites/008_pot.png",
+    "box": [
+      1459,
+      1002,
+      1945,
+      1406
+    ],
+    "name": "pot",
+    "contentBox": [
+      25,
+      3,
+      432,
+      374
+    ]
+  },
+  "009_boiling_soup": {
+    "src": "assets/sprites/009_boiling_soup.png",
+    "box": [
+      1462,
+      979,
+      1958,
+      1402
+    ],
+    "name": "boiling_soup",
+    "contentBox": [
+      21,
+      28,
+      451,
+      374
+    ]
+  },
+  "010_soup": {
+    "src": "assets/sprites/010_soup.png",
+    "box": [
+      1462,
+      979,
+      1958,
+      1402
+    ],
+    "name": "soup",
+    "contentBox": [
+      21,
+      28,
+      451,
+      374
+    ]
+  },
+  "011_carrot_soup": {
+    "src": "assets/sprites/011_carrot_soup.png",
+    "box": [
+      1462,
+      978,
+      1958,
+      1402
+    ],
+    "name": "carrot_soup",
+    "contentBox": [
+      21,
+      29,
+      451,
+      374
+    ]
+  },
+  "012_corn_soup": {
+    "src": "assets/sprites/012_corn_soup.png",
+    "box": [
+      1462,
+      979,
+      1958,
+      1402
+    ],
+    "name": "corn_soup",
+    "contentBox": [
+      21,
+      24,
+      451,
+      378
+    ]
+  },
+  "014_pot": {
+    "src": "assets/sprites/014_pot.png",
+    "box": [
+      1416,
+      1286,
+      1967,
+      1756
+    ],
+    "name": "pot",
+    "contentBox": [
+      24,
+      31,
+      500,
+      412
+    ]
+  },
+  "015_boiling_soup": {
+    "src": "assets/sprites/015_boiling_soup.png",
+    "box": [
+      1416,
+      1286,
+      1967,
+      1756
+    ],
+    "name": "boiling_soup",
+    "contentBox": [
+      24,
+      31,
+      500,
+      412
+    ]
+  },
+  "016_soup": {
+    "src": "assets/sprites/016_soup.png",
+    "box": [
+      1417,
+      1286,
+      1968,
+      1756
+    ],
+    "name": "soup",
+    "contentBox": [
+      23,
+      31,
+      501,
+      412
+    ]
+  },
+  "017_carrot_soup": {
+    "src": "assets/sprites/017_carrot_soup.png",
+    "box": [
+      1416,
+      1285,
+      1967,
+      1756
+    ],
+    "name": "carrot_soup",
+    "contentBox": [
+      24,
+      2,
+      500,
+      442
+    ]
+  },
+  "018_corn_soup": {
+    "src": "assets/sprites/018_corn_soup.png",
+    "box": [
+      1416,
+      1286,
+      1967,
+      1756
+    ],
+    "name": "corn_soup",
+    "contentBox": [
+      24,
+      27,
+      500,
+      416
+    ]
+  },
+  "020_bowl": {
+    "src": "assets/sprites/020_bowl.png",
+    "box": [
+      2043,
+      790,
+      2481,
+      1152
+    ],
+    "name": "bowl",
+    "contentBox": [
+      14,
+      40,
+      370,
+      284
+    ]
+  },
+  "021_soup": {
+    "src": "assets/sprites/021_soup.png",
+    "box": [
+      2050,
+      607,
+      2537,
+      1166
+    ],
+    "name": "soup",
+    "contentBox": [
+      3,
+      225,
+      426,
+      304
+    ],
+    "iconBox": [
+      0,
+      213,
+      459,
+      331
+    ],
+    "iconCenter": [
+      162.5,
+      367.0
+    ]
+  },
+  "022_carrot_soup": {
+    "src": "assets/sprites/022_carrot_soup.png",
+    "box": [
+      2050,
+      608,
+      2537,
+      1166
+    ],
+    "name": "carrot_soup",
+    "contentBox": [
+      3,
+      224,
+      426,
+      305
+    ],
+    "iconBox": [
+      0,
+      212,
+      458,
+      332
+    ],
+    "iconCenter": [
+      162.5,
+      366.5
+    ]
+  },
+  "023_corn_soup": {
+    "src": "assets/sprites/023_corn_soup.png",
+    "box": [
+      2027,
+      822,
+      2512,
+      1154
+    ],
+    "name": "corn_soup",
+    "contentBox": [
+      37,
+      8,
+      392,
+      287
+    ],
+    "iconBox": [
+      6,
+      0,
+      452,
+      316
+    ],
+    "iconCenter": [
+      187.0,
+      152.0
+    ]
+  },
+  "025_bowl": {
+    "src": "assets/sprites/025_bowl.png",
+    "box": [
+      2017,
+      1078,
+      2531,
+      1428
+    ],
+    "name": "bowl",
+    "contentBox": [
+      40,
+      8,
+      415,
+      303
+    ]
+  },
+  "026_soup": {
+    "src": "assets/sprites/026_soup.png",
+    "box": [
+      2042,
+      851,
+      2558,
+      1442
+    ],
+    "name": "soup",
+    "contentBox": [
+      3,
+      238,
+      451,
+      322
+    ]
+  },
+  "027_carrot_soup": {
+    "src": "assets/sprites/027_carrot_soup.png",
+    "box": [
+      2042,
+      851,
+      2557,
+      1442
+    ],
+    "name": "carrot_soup",
+    "contentBox": [
+      3,
+      238,
+      451,
+      322
+    ]
+  },
+  "028_corn_soup": {
+    "src": "assets/sprites/028_corn_soup.png",
+    "box": [
+      2017,
+      1078,
+      2531,
+      1428
+    ],
+    "name": "corn_soup",
+    "contentBox": [
+      40,
+      8,
+      415,
+      303
+    ]
+  },
+  "030_bowl": {
+    "src": "assets/sprites/030_bowl.png",
+    "box": [
+      2027,
+      1357,
+      2593,
+      1751
+    ],
+    "name": "bowl",
+    "contentBox": [
+      3,
+      6,
+      497,
+      354
+    ]
+  },
+  "031_soup": {
+    "src": "assets/sprites/031_soup.png",
+    "box": [
+      2027,
+      1102,
+      2593,
+      1751
+    ],
+    "name": "soup",
+    "contentBox": [
+      3,
+      261,
+      497,
+      354
+    ]
+  },
+  "032_carrot_soup": {
+    "src": "assets/sprites/032_carrot_soup.png",
+    "box": [
+      2027,
+      1102,
+      2593,
+      1751
+    ],
+    "name": "carrot_soup",
+    "contentBox": [
+      3,
+      261,
+      497,
+      354
+    ]
+  },
+  "033_corn_soup": {
+    "src": "assets/sprites/033_corn_soup.png",
+    "box": [
+      1998,
+      1352,
+      2562,
+      1737
+    ],
+    "name": "corn_soup",
+    "contentBox": [
+      43,
+      9,
+      457,
+      333
+    ]
+  },
+  "035_pan": {
+    "src": "assets/sprites/035_pan.png",
+    "box": [
+      2464,
+      663,
+      3508,
+      1732
+    ],
+    "name": "pan",
+    "contentBox": [
+      522,
+      96,
+      477,
+      330
+    ]
+  },
+  "036_beef": {
+    "src": "assets/sprites/036_beef.png",
+    "box": [
+      3023,
+      843,
+      3339,
+      1019
+    ],
+    "name": "beef",
+    "contentBox": [
+      1,
+      3,
+      309,
+      163
+    ]
+  },
+  "037_raw_beef": {
+    "src": "assets/sprites/037_raw_beef.png",
+    "box": [
+      3028,
+      842,
+      3333,
+      1006
+    ],
+    "name": "raw_beef",
+    "contentBox": [
+      1,
+      6,
+      300,
+      155
+    ]
+  },
+  "038_tomato_beef": {
+    "src": "assets/sprites/038_tomato_beef.png",
+    "box": [
+      2970,
+      743,
+      3466,
+      1094
+    ],
+    "name": "tomato_beef",
+    "contentBox": [
+      13,
+      25,
+      480,
+      317
+    ]
+  },
+  "039_potato_beef": {
+    "src": "assets/sprites/039_potato_beef.png",
+    "box": [
+      2983,
+      716,
+      3492,
+      1086
+    ],
+    "name": "potato_beef",
+    "contentBox": [
+      6,
+      34,
+      482,
+      332
+    ]
+  },
+  "040_burnt_beef": {
+    "src": "assets/sprites/040_burnt_beef.png",
+    "box": [
+      2954,
+      701,
+      3498,
+      1089
+    ],
+    "name": "burnt_beef",
+    "contentBox": [
+      36,
+      33,
+      469,
+      351
+    ]
+  },
+  "042_pan": {
+    "src": "assets/sprites/042_pan.png",
+    "box": [
+      2998,
+      999,
+      3530,
+      1385
+    ],
+    "name": "pan",
+    "contentBox": [
+      7,
+      35,
+      503,
+      347
+    ]
+  },
+  "043_beef": {
+    "src": "assets/sprites/043_beef.png",
+    "box": [
+      3041,
+      1131,
+      3371,
+      1316
+    ],
+    "name": "beef",
+    "contentBox": [
+      1,
+      4,
+      323,
+      170
+    ]
+  },
+  "044_raw_beef": {
+    "src": "assets/sprites/044_raw_beef.png",
+    "box": [
+      3046,
+      1131,
+      3365,
+      1303
+    ],
+    "name": "raw_beef",
+    "contentBox": [
+      1,
+      6,
+      313,
+      162
+    ]
+  },
+  "045_tomato_beef": {
+    "src": "assets/sprites/045_tomato_beef.png",
+    "box": [
+      2983,
+      1027,
+      3502,
+      1395
+    ],
+    "name": "tomato_beef",
+    "contentBox": [
+      14,
+      27,
+      501,
+      331
+    ]
+  },
+  "046_potato_beef": {
+    "src": "assets/sprites/046_potato_beef.png",
+    "box": [
+      2998,
+      999,
+      3530,
+      1385
+    ],
+    "name": "potato_beef",
+    "contentBox": [
+      6,
+      35,
+      504,
+      347
+    ]
+  },
+  "047_burnt_beef": {
+    "src": "assets/sprites/047_burnt_beef.png",
+    "box": [
+      2980,
+      982,
+      3548,
+      1390
+    ],
+    "name": "burnt_beef",
+    "contentBox": [
+      25,
+      36,
+      490,
+      367
+    ]
+  },
+  "049_pan": {
+    "src": "assets/sprites/049_pan.png",
+    "box": [
+      2975,
+      1332,
+      3539,
+      1731
+    ],
+    "name": "pan",
+    "contentBox": [
+      23,
+      29,
+      537,
+      359
+    ]
+  },
+  "050_beef": {
+    "src": "assets/sprites/050_beef.png",
+    "box": [
+      3037,
+      1446,
+      3396,
+      1647
+    ],
+    "name": "beef",
+    "contentBox": [
+      1,
+      4,
+      353,
+      185
+    ]
+  },
+  "051_raw_beef": {
+    "src": "assets/sprites/051_raw_beef.png",
+    "box": [
+      3043,
+      1445,
+      3390,
+      1632
+    ],
+    "name": "raw_beef",
+    "contentBox": [
+      1,
+      7,
+      341,
+      177
+    ]
+  },
+  "052_tomato_beef": {
+    "src": "assets/sprites/052_tomato_beef.png",
+    "box": [
+      2975,
+      1332,
+      3539,
+      1731
+    ],
+    "name": "tomato_beef",
+    "contentBox": [
+      15,
+      29,
+      545,
+      359
+    ]
+  },
+  "053_potato_beef": {
+    "src": "assets/sprites/053_potato_beef.png",
+    "box": [
+      2990,
+      1302,
+      3568,
+      1722
+    ],
+    "name": "potato_beef",
+    "contentBox": [
+      7,
+      39,
+      548,
+      377
+    ]
+  },
+  "054_burnt_beef": {
+    "src": "assets/sprites/054_burnt_beef.png",
+    "box": [
+      2972,
+      1283,
+      3589,
+      1726
+    ],
+    "name": "burnt_beef",
+    "contentBox": [
+      27,
+      39,
+      533,
+      398
+    ]
+  },
+  "056_plate": {
+    "src": "assets/sprites/056_plate.png",
+    "box": [
+      2470,
+      853,
+      2909,
+      1123
+    ],
+    "name": "plate",
+    "contentBox": [
+      6,
+      12,
+      380,
+      257
+    ]
+  },
+  "057_tomato_beef": {
+    "src": "assets/sprites/057_tomato_beef.png",
+    "box": [
+      2480,
+      851,
+      2899,
+      1125
+    ],
+    "name": "tomato_beef",
+    "contentBox": [
+      14,
+      2,
+      363,
+      264
+    ],
+    "iconBox": [
+      1,
+      0,
+      399,
+      274
+    ],
+    "iconCenter": [
+      186.0,
+      134.0
+    ]
+  },
+  "058_potato_beef": {
+    "src": "assets/sprites/058_potato_beef.png",
+    "box": [
+      2478,
+      853,
+      2898,
+      1126
+    ],
+    "name": "potato_beef",
+    "contentBox": [
+      14,
+      0,
+      362,
+      265
+    ],
+    "iconBox": [
+      1,
+      0,
+      401,
+      273
+    ],
+    "iconCenter": [
+      187.0,
+      131.0
+    ]
+  },
+  "059_beef": {
+    "src": "assets/sprites/059_beef.png",
+    "box": [
+      2474,
+      853,
+      2898,
+      1126
+    ],
+    "name": "beef",
+    "contentBox": [
+      15,
+      0,
+      364,
+      265
+    ],
+    "iconBox": [
+      0,
+      0,
+      406,
+      273
+    ],
+    "iconCenter": [
+      191.0,
+      131.5
+    ]
+  },
+  "061_plate": {
+    "src": "assets/sprites/061_plate.png",
+    "box": [
+      2464,
+      1123,
+      2900,
+      1424
+    ],
+    "name": "plate",
+    "contentBox": [
+      33,
+      4,
+      384,
+      296
+    ]
+  },
+  "062_tomato_beef": {
+    "src": "assets/sprites/062_tomato_beef.png",
+    "box": [
+      2481,
+      1126,
+      2923,
+      1416
+    ],
+    "name": "tomato_beef",
+    "contentBox": [
+      14,
+      2,
+      384,
+      280
+    ]
+  },
+  "063_potato_beef": {
+    "src": "assets/sprites/063_potato_beef.png",
+    "box": [
+      2479,
+      1128,
+      2923,
+      1416
+    ],
+    "name": "potato_beef",
+    "contentBox": [
+      15,
+      0,
+      384,
+      280
+    ]
+  },
+  "064_beef": {
+    "src": "assets/sprites/064_beef.png",
+    "box": [
+      2475,
+      1128,
+      2922,
+      1416
+    ],
+    "name": "beef",
+    "contentBox": [
+      16,
+      0,
+      387,
+      280
+    ]
+  },
+  "066_plate": {
+    "src": "assets/sprites/066_plate.png",
+    "box": [
+      2480,
+      1418,
+      2940,
+      1718
+    ],
+    "name": "plate",
+    "contentBox": [
+      16,
+      0,
+      398,
+      291
+    ]
+  },
+  "067_tomato_beef": {
+    "src": "assets/sprites/067_tomato_beef.png",
+    "box": [
+      2480,
+      1416,
+      2940,
+      1718
+    ],
+    "name": "tomato_beef",
+    "contentBox": [
+      15,
+      2,
+      399,
+      291
+    ]
+  },
+  "068_potato_beef": {
+    "src": "assets/sprites/068_potato_beef.png",
+    "box": [
+      2478,
+      1418,
+      2940,
+      1718
+    ],
+    "name": "potato_beef",
+    "contentBox": [
+      15,
+      0,
+      401,
+      291
+    ]
+  },
+  "069_beef": {
+    "src": "assets/sprites/069_beef.png",
+    "box": [
+      2474,
+      1418,
+      2940,
+      1718
+    ],
+    "name": "beef",
+    "contentBox": [
+      17,
+      0,
+      403,
+      291
+    ]
+  },
+  "070_tomato": {
+    "src": "assets/sprites/070_tomato.png",
+    "box": [
+      3605,
+      1324,
+      3938,
+      1611
+    ],
+    "name": "tomato",
+    "contentBox": [
+      10,
+      36,
+      303,
+      213
+    ]
+  },
+  "071_potato": {
+    "src": "assets/sprites/071_potato.png",
+    "box": [
+      3523,
+      942,
+      3999,
+      1265
+    ],
+    "name": "potato",
+    "contentBox": [
+      10,
+      32,
+      449,
+      279
+    ]
+  },
+  "072_corn": {
+    "src": "assets/sprites/072_corn.png",
+    "box": [
+      992,
+      947,
+      1454,
+      1269
+    ],
+    "name": "corn",
+    "contentBox": [
+      52,
+      7,
+      367,
+      315
+    ]
+  },
+  "073_carrot": {
+    "src": "assets/sprites/073_carrot.png",
+    "box": [
+      922,
+      1288,
+      1410,
+      1625
+    ],
+    "name": "carrot",
+    "contentBox": [
+      48,
+      29,
+      429,
+      304
+    ]
+  },
+  "075_plate": {
+    "src": "assets/sprites/075_plate.png",
+    "box": [
+      3628,
+      1798,
+      4037,
+      2043
+    ],
+    "name": "plate",
+    "contentBox": [
+      38,
+      0,
+      359,
+      243
+    ]
+  },
+  "076_candy": {
+    "src": "assets/sprites/076_candy.png",
+    "box": [
+      3683,
+      1811,
+      3978,
+      1991
+    ],
+    "name": "candy",
+    "contentBox": [
+      9,
+      1,
+      273,
+      164
+    ],
+    "iconBox": [
+      1,
+      4,
+      290,
+      170
+    ],
+    "iconCenter": [
+      144.5,
+      86.5
+    ]
+  },
+  "078_plate": {
+    "src": "assets/sprites/078_plate.png",
+    "box": [
+      3060,
+      1753,
+      3542,
+      2050
+    ],
+    "name": "plate",
+    "contentBox": [
+      31,
+      32,
+      397,
+      262
+    ]
+  },
+  "079_beef": {
+    "src": "assets/sprites/079_beef.png",
+    "box": [
+      3101,
+      1813,
+      3446,
+      2013
+    ],
+    "name": "beef",
+    "contentBox": [
+      2,
+      1,
+      343,
+      192
+    ]
+  },
+  "081_plate": {
+    "src": "assets/sprites/081_plate.png",
+    "box": [
+      2488,
+      1766,
+      2939,
+      2050
+    ],
+    "name": "plate",
+    "contentBox": [
+      7,
+      31,
+      394,
+      253
+    ]
+  },
+  "082_bread": {
+    "src": "assets/sprites/082_bread.png",
+    "box": [
+      2524,
+      1818,
+      2844,
+      1987
+    ],
+    "name": "bread",
+    "contentBox": [
+      0,
+      1,
+      320,
+      167
+    ],
+    "iconBox": [
+      0,
+      0,
+      320,
+      169
+    ],
+    "iconCenter": [
+      160.0,
+      84.5
+    ]
+  },
+  "083_rice": {
+    "src": "assets/sprites/083_rice.png",
+    "box": [
+      2011,
+      1773,
+      2405,
+      2062
+    ],
+    "name": "rice",
+    "contentBox": [
+      17,
+      5,
+      347,
+      273
+    ],
+    "iconBox": [
+      3,
+      0,
+      379,
+      289
+    ],
+    "iconCenter": [
+      162.5,
+      133.0
+    ]
+  },
+  "085_tea_pot": {
+    "src": "assets/sprites/085_tea_pot.png",
+    "box": [
+      1426,
+      1668,
+      1838,
+      2044
+    ],
+    "name": "tea_pot",
+    "contentBox": [
+      6,
+      7,
+      374,
+      363
+    ]
+  },
+  "086_to_pot3": {
+    "src": "assets/sprites/086_to_pot3.png",
+    "box": [
+      1303,
+      462,
+      1715,
+      864
+    ],
+    "name": "to_pot3",
+    "contentBox": [
+      4,
+      10,
+      398,
+      376
+    ]
+  },
+  "087_to_poy2": {
+    "src": "assets/sprites/087_to_poy2.png",
+    "box": [
+      1222,
+      695,
+      1690,
+      1152
+    ],
+    "name": "to_poy2",
+    "contentBox": [
+      4,
+      12,
+      452,
+      427
+    ]
+  },
+  "088_to_pot1": {
+    "src": "assets/sprites/088_to_pot1.png",
+    "box": [
+      1151,
+      974,
+      1665,
+      1476
+    ],
+    "name": "to_pot1",
+    "contentBox": [
+      4,
+      12,
+      497,
+      471
+    ]
+  },
+  "090_can": {
+    "src": "assets/sprites/090_can.png",
+    "box": [
+      710,
+      1753,
+      1196,
+      2160
+    ],
+    "name": "can",
+    "contentBox": [
+      4,
+      10,
+      477,
+      397
+    ]
+  },
+  "091_cover": {
+    "src": "assets/sprites/091_cover.png",
+    "box": [
+      707,
+      1701,
+      1222,
+      2000
+    ],
+    "name": "cover",
+    "contentBox": [
+      4,
+      21,
+      483,
+      274
+    ]
+  },
+  "092_trash_beef": {
+    "src": "assets/sprites/092_trash_beef.png",
+    "box": [
+      320,
+      1500,
+      763,
+      1701
+    ],
+    "name": "trash_beef",
+    "contentBox": [
+      43,
+      40,
+      374,
+      142
+    ]
+  },
+  "094_order5": {
+    "src": "assets/sprites/094_order5.png",
+    "box": [
+      1536,
+      122,
+      3778,
+      825
+    ],
+    "name": "order5",
+    "contentBox": [
+      1857,
+      1,
+      385,
+      629
+    ]
+  },
+  "095_order4": {
+    "src": "assets/sprites/095_order4.png",
+    "box": [
+      2784,
+      156,
+      3210,
+      804
+    ],
+    "name": "order4",
+    "contentBox": [
+      1,
+      5,
+      391,
+      642
+    ]
+  },
+  "096_order3": {
+    "src": "assets/sprites/096_order3.png",
+    "box": [
+      2158,
+      156,
+      2593,
+      848
+    ],
+    "name": "order3",
+    "contentBox": [
+      36,
+      19,
+      387,
+      580
+    ]
+  },
+  "097_order2": {
+    "src": "assets/sprites/097_order2.png",
+    "box": [
+      1521,
+      166,
+      2066,
+      831
+    ],
+    "name": "order2",
+    "contentBox": [
+      61,
+      2,
+      385,
+      655
+    ]
+  },
+  "098_order1": {
+    "src": "assets/sprites/098_order1.png",
+    "box": [
+      883,
+      145,
+      1389,
+      803
+    ],
+    "name": "order1",
+    "contentBox": [
+      0,
+      2,
+      505,
+      618
+    ]
+  },
+  "100_score": {
+    "src": "assets/sprites/100_score.png",
+    "box": [
+      3069,
+      2,
+      3547,
+      181
+    ],
+    "name": "score",
+    "contentBox": [
+      29,
+      0,
+      441,
+      179
+    ]
+  },
+  "101_score_progress": {
+    "src": "assets/sprites/101_score_progress.png",
+    "box": [
+      1599,
+      2,
+      3045,
+      192
+    ],
+    "name": "score_progress",
+    "contentBox": [
+      32,
+      0,
+      1403,
+      190
+    ]
+  },
+  "102_timer": {
+    "src": "assets/sprites/102_timer.png",
+    "box": [
+      1083,
+      2,
+      1560,
+      197
+    ],
+    "name": "timer",
+    "contentBox": [
+      6,
+      0,
+      463,
+      192
+    ]
+  },
+  "103_rule": {
+    "src": "assets/sprites/103_rule.png",
+    "box": [
+      3993,
+      9,
+      4453,
+      424
+    ],
+    "name": "rule",
+    "contentBox": [
+      110,
+      36,
+      189,
+      144
+    ]
+  },
+  "104_exit": {
+    "src": "assets/sprites/104_exit.png",
+    "box": [
+      338,
+      50,
+      541,
+      257
+    ],
+    "name": "exit",
+    "contentBox": [
+      14,
+      11,
+      175,
+      190
+    ]
+  }
+}

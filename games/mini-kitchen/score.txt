@@ -1,0 +1,57 @@
+===90sec===
+potato beef=138
+rice+soup=284-138=146
+rice+corn soup=462-284=178
+rice+tomato beef=651-462=189
+tomato beef=793-651=142
+rice+soup=940-793=147
+bread+potato beef+carrot soup=1275-940=335
+beef+bread=1418-1275=143
+corn soup=1563-1418=145
+beef+beef=1757-1563=194
+soup+rice=1902-1757=145
+carrot soup+carrot soup+potato beef=2330-1902=428
+potato beef+beef+corn soup=2703-2330=373
+potato beef+carrot soup+carrot soup=3100-2703=397
+carrot soup=3232-3100=132
+potato beef+carrot soup+soup=3596-3232=364
+bread+soup+beef=3831-3596=235
+bread+potato beef=4024-3831=
+corn soup+rice=4207-4024=
+tomato beef+tomato beef+carrot soup=4587-4207
+soup+soup=4744-4587
+soup+soup=4927-4744
+beef+tomato beef+tomato beef=5307-4927
+candy*6=5587-5307
+corn soup=5726-5587
+rice+beef*2=5965-5726
+rice+carrot soup=6144-5965
+bread+corn soup=6317-6144
+candy*4=6499-6144
+bread+tomato beef+potato beef=6811-6499
+bread+carrot soup=6998-6811
+corn soup+bread+soup=7288-6998
+bread+potato beef+corn soup=7580-7288
+candy*6=7855-7580
+corn soup=7982-7855
+===last 30sec===
+potato beef+beef+corn soup=8316-7982
+carrot soup=8458-8316
+potato beef=8602-8458
+soup*2=8783-8602
+soup*2=8975-8783
+bread+potato beef+tomato beef=9308-8975
+tomato beef=9454-9308
+beef+tomato beef+carrot soup=9836-9454
+corn soup*2_potato beef=10224-9836
+bread+carrot soup+beef=10473-10224
+rice+potato beef+soup=10723-10473
+carrot soup+soup+tomato beef=11061-10723
+corn soup+carrot soup*2=11446-11061
+beef*2=11639-11446
+tomato beef+corn soup+soup=12015-11639
+corn soup=12164-12015
+soup *2=12359-12164
+beef=12453-12359
+beef*2=12649-12453
+tomato beef=12794-12649

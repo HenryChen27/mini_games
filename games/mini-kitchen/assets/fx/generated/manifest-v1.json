@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "provenance": "Built-in image_gen, 3 generated RGBA source sheets; transparent alpha preserved.",
+  "ingredients": {
+    "src": "assets/fx/generated/ingredients-runtime-v1.png",
+    "rects": [
+      [
+        0,
+        0,
+        192,
+        177
+      ],
+      [
+        196,
+        0,
+        192,
+        177
+      ],
+      [
+        392,
+        0,
+        163,
+        151
+      ],
+      [
+        559,
+        0,
+        125,
+        157
+      ],
+      [
+        688,
+        0,
+        192,
+        177
+      ],
+      [
+        884,
+        0,
+        130,
+        192
+      ],
+      [
+        0,
+        196,
+        127,
+        128
+      ],
+      [
+        131,
+        196,
+        133,
+        192
+      ],
+      [
+        268,
+        196,
+        192,
+        184
+      ],
+      [
+        464,
+        196,
+        192,
+        145
+      ],
+      [
+        660,
+        196,
+        192,
+        149
+      ],
+      [
+        0,
+        392,
+        192,
+        169
+      ],
+      [
+        196,
+        392,
+        192,
+        173
+      ],
+      [
+        392,
+        392,
+        192,
+        138
+      ],
+      [
+        588,
+        392,
+        192,
+        187
+      ],
+      [
+        784,
+        392,
+        192,
+        172
+      ]
+    ]
+  },
+  "thermal": {
+    "src": "assets/fx/generated/thermal-runtime-v1.png",
+    "rects": [
+      [
+        0,
+        0,
+        256,
+        192
+      ],
+      [
+        260,
+        0,
+        256,
+        192
+      ],
+      [
+        520,
+        0,
+        256,
+        192
+      ],
+      [
+        0,
+        196,
+        256,
+        192
+      ],
+      [
+        260,
+        196,
+        256,
+        192
+      ],
+      [
+        520,
+        196,
+        256,
+        192
+      ],
+      [
+        0,
+        392,
+        256,
+        192
+      ],
+      [
+        260,
+        392,
+        256,
+        192
+      ],
+      [
+        520,
+        392,
+        256,
+        192
+      ],
+      [
+        0,
+        588,
+        256,
+        192
+      ],
+      [
+        260,
+        588,
+        256,
+        192
+      ],
+      [
+        520,
+        588,
+        256,
+        192
+      ],
+      [
+        0,
+        784,
+        256,
+        192
+      ],
+      [
+        260,
+        784,
+        256,
+        192
+      ],
+      [
+        520,
+        784,
+        256,
+        192
+      ],
+      [
+        0,
+        980,
+        256,
+        192
+      ]
+    ]
+  },
+  "bases": {
+    "src": "assets/fx/generated/bases-runtime-v1.png",
+    "rects": [
+      [
+        0,
+        0,
+        369,
+        224
+      ],
+      [
+        373,
+        0,
+        374,
+        224
+      ],
+      [
+        0,
+        228,
+        368,
+        224
+      ],
+      [
+        372,
+        228,
+        367,
+        224
+      ]
+    ]
+  },
+  "baseIndex": {
+    "corn_soup": 0,
+    "carrot_soup": 1,
+    "tomato_beef": 2,
+    "potato_beef": 3
+  },
+  "mapping": {
+    "corn_soup": {
+      "pepper_back": 1,
+      "corn": 0,
+      "kernel_left": 2,
+      "kernel_small": 2,
+      "pepper_front": 3,
+      "kernel_front": 2
+    },
+    "carrot_soup": {
+      "leek": 7,
+      "carrot_back": 5,
+      "pea_back": 6,
+      "pea_right": 6,
+      "carrot_left": 4,
+      "carrot_right": 4,
+      "pea_front": 6
+    },
+    "tomato_beef": {
+      "onion_back": 9,
+      "onion_front": 10,
+      "tomato": 8,
+      "garnish": 11
+    },
+    "potato_beef": {
+      "potato_back": 13,
+      "potato_left": 13,
+      "potato_small": 13,
+      "potato_front": 12,
+      "scallion": 14
+    }
+  }
+}

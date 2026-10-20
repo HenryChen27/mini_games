@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict');
+const {Kitchen}=require('../engine.js');
+const game=new Kitchen(()=>.3);game.spawn();game.cook(0,'water');game.tick(1.25);
+const save=game.serialize(),restored=new Kitchen();
+assert(Kitchen.isValidSave(save));assert(restored.restore(save));
+assert.deepEqual(restored.serialize(),save);
+restored.tick(.5);assert.equal(restored.pots[0].age,1.75);
+assert.equal(game.pots[0].age,1.25);
+const invalid=structuredClone(save);invalid.state.orders[0].slot=8;
+const before=restored.snapshot();assert(!restored.restore(invalid));assert.deepEqual(restored.snapshot(),before);
+game.next=Infinity;assert(restored.restore(game.serialize()));assert.equal(restored.next,Infinity);
+console.log('Passed: full round serialization, independent restoration, invalid save rejection, infinite arrival timer.');
+const legacy=structuredClone(save);legacy.version=1;legacy.state.elapsed*=1.5;
+legacy.state.schedule=legacy.state.schedule.map(o=>({...o,at:o.phase==='normal'?o.at*1.5:o.at+30}));
+const migrated=new Kitchen();assert(migrated.restore(legacy));assert.equal(migrated.elapsed,save.state.elapsed);
+assert(migrated.schedule.filter(o=>o.phase==='frenzy').every(o=>o.at>=60&&o.at<90));
+legacy.state.elapsed='30';assert(!Kitchen.isValidSave(legacy));
+console.log('Passed: legacy two-minute saves migrate to 90 seconds without discarding progress.');

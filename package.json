@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "start": "python -m http.server 8000",
-    "test": "npm --prefix games/minesweeper test && node games/jellyfish/tests/physics.cjs",
+    "test": "npm --prefix games/minesweeper test && node games/jellyfish/tests/physics.cjs && npm --prefix games/mini-kitchen test",
     "test:minesweeper": "npm --prefix games/minesweeper test",
-    "test:jellyfish": "node games/jellyfish/tests/physics.cjs"
+    "test:jellyfish": "node games/jellyfish/tests/physics.cjs",
+    "test:mini-kitchen": "npm --prefix games/mini-kitchen test"
   }
 }

@@ -32,6 +32,11 @@ def main():
             files += sorted((source / 'css').glob('*.css'))
             files += sorted(p for p in (source / 'assets').rglob('*') if p.is_file()
                             and p.suffix.lower() in {'.png', '.mp3', '.wav', '.ttf', '.txt', '.md'} and p.name != '1.png')
+        elif game['id'] == 'mini-kitchen':
+            files = sorted(p for p in source.iterdir() if p.is_file() and
+                           (p.suffix in {'.js', '.css', '.html'} and p.name != 'dev-autoplay.js'
+                            or p.name in {'package.json', 'README.md'}))
+            files += sorted(p for p in (source / 'assets').rglob('*') if p.is_file())
         else:
             files = sorted(p for p in source.iterdir() if p.is_file() and
                            (p.suffix in {'.js', '.css', '.html'} and not p.name.endswith('.test.js')
@@ -44,7 +49,14 @@ def main():
         archive = output / game['archive']
         with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
             for file in files:
-                z.write(file, 'game/' + file.relative_to(source).as_posix())
+                name = 'game/' + file.relative_to(source).as_posix()
+                if game['id'] == 'mini-kitchen' and file.name == 'index.html':
+                    import re
+                    html = file.read_text(encoding='utf-8')
+                    html = re.sub(r'<!-- DEVELOPMENT ONLY:.*?--><script src="dev-autoplay\.js[^\"]*"></script>', '', html)
+                    z.writestr(name, html)
+                else:
+                    z.write(file, name)
             z.writestr('package.json', json.dumps({k: game[k] for k in ['id', 'runtime', 'version']}))
         with zipfile.ZipFile(archive) as z:
             assert z.testzip() is None
