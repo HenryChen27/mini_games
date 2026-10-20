@@ -7,9 +7,3 @@ dist/
 *.log
 .env
 .env.*
-.publish/
-.local-backup/
-dist/
-*.log
-.env
-.env.*
