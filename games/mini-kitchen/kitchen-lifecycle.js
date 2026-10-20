@@ -33,7 +33,7 @@
   closeTask=null;document.body.inert=previousInert;last=performance.now();
   for(const a of animations)try{a.play();}catch{}animations=[];
   if(['playing','resume-countdown','resuming','launch','intro'].includes(phase)){
-   const fresh=phase==='launch'||phase==='intro';running=false;paused=true;resumeFromSave=false;showCountdown(!fresh);
+   const fresh=phase==='launch'||phase==='intro';running=false;paused=!fresh;resumeFromSave=false;showCountdown(!fresh);
   }
   hostSuspended=false;
   return {ok:true,resumed:true};

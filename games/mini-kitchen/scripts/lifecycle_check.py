@@ -25,7 +25,10 @@ with sync_playwright() as p:
     assert page.evaluate('Kitchen.isValidSave(JSON.parse(localStorage.getItem("bonbon-save-v1")).engine)')
     page.evaluate('BonbonKitchen.resume()')
     page.wait_for_function("BonbonKitchen.getSession().phase==='playing'")
-    page.evaluate("BonbonKitchen.performAction({kind:'ingredient',value:'water'})")
+    assert page.evaluate('!BonbonKitchen.getSession().paused')
+    start_elapsed=page.evaluate('game.elapsed');page.wait_for_timeout(150)
+    assert page.evaluate('game.elapsed')>start_elapsed
+    assert page.evaluate("BonbonKitchen.performAction({kind:'ingredient',value:'water'})")
     page.evaluate("()=>{window.originalSet=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='bonbon-save-v1')throw Error('quota test');return window.originalSet.call(this,k,v)}}")
     failed=page.evaluate('BonbonKitchen.prepareToClose()')
     assert not failed['ok'] and not failed['readyToClose'] and failed['error']=='quota test'
