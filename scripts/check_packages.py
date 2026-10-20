@@ -95,6 +95,12 @@ with sync_playwright() as p:
         page.wait_for_timeout(3200)
         assert page.evaluate("BonbonKitchen.getState().pots.some(p=>p.state==='ready')")
         assert not errors and not missing, (errors, missing)
+        assert page.evaluate('BonbonKitchen.saveAll().ok')
+        assert page.evaluate('BonbonKitchen.prepareToClose()')['readyToClose']
+        elapsed = page.evaluate('BonbonKitchen.getState().elapsed')
+        page.wait_for_timeout(250)
+        assert page.evaluate('BonbonKitchen.getState().elapsed') == elapsed
+        assert page.evaluate('BonbonKitchen.getSession().hostSuspended')
         print('Kitchen: packaged assets/audio load, guide works, 90-second session cooks normally, developer bot excluded.')
     browser.close()
 server.shutdown()

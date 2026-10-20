@@ -2,7 +2,7 @@
 (function(root){
  const names=['click','add_water','timer','start','add_beef','add_corn_or_carrot','add_tomato_or_potato','beef_burnt','beef_cooked','bonbon_time','last_5_sec','submit_dish','submit_order','switch_to_bowl','switch_to_plate','trash_can'];
  function create(){
-  let context,master,musicBus,effectsBus,masterTarget=-1,enabled=true,unlocked=false,wantedHeating=false;
+  let context,master,musicBus,effectsBus,masterTarget=-1,enabled=true,unlocked=false,wantedHeating=false,lifecycleSuspended=false;
   const volumes={music:1,effects:1};try{const saved=JSON.parse(localStorage.getItem('bonbon-audio-v1'));for(const key of Object.keys(volumes))if(Number.isFinite(saved?.[key]))volumes[key]=Math.max(0,Math.min(1,saved[key]));}catch{}
   function setVolume(key,value){if(!(key in volumes)||!Number.isFinite(value))return;volumes[key]=Math.max(0,Math.min(1,value));const bus=key==='music'?musicBus:effectsBus;if(bus)bus.gain.setTargetAtTime(volumes[key],context.currentTime,.06);try{localStorage.setItem('bonbon-audio-v1',JSON.stringify(volumes));}catch{}}
   const buffers=new Map(),loops=new Map(),lastPlayed=new Map(),events=[];
@@ -12,6 +12,7 @@
   }
   function setLoop(name,volume){const node=loops.get(name);if(!node)return;if(node.target===volume)return;node.target=volume;node.gain.gain.setTargetAtTime(volume,context.currentTime,volume? .12:.22);}
   function unlock(){
+   if(lifecycleSuspended)return;
    if(!context){
     context=new AudioContext();master=context.createGain();master.connect(context.destination);
     musicBus=context.createGain();effectsBus=context.createGain();musicBus.gain.value=volumes.music;effectsBus.gain.value=volumes.effects;musicBus.connect(master);effectsBus.connect(master);
@@ -21,13 +22,15 @@
    unlocked=true;context.resume().catch(()=>{});
   }
   function play(name='click'){
+   if(lifecycleSuspended)return;
    if(!enabled)return;unlock();const now=context.currentTime;
    if(now-(lastPlayed.get(name)??-100)<.065)return;lastPlayed.set(name,now);
    events.push(name);if(events.length>80)events.shift();
-   const run=()=>{if(!enabled||!buffers.has(name))return;const source=context.createBufferSource(),gain=context.createGain();source.buffer=buffers.get(name);gain.gain.value=name==='bonbon_time'?.9:.75;source.connect(gain).connect(effectsBus);source.start();};
+   const run=()=>{if(lifecycleSuspended||!enabled||!buffers.has(name))return;const source=context.createBufferSource(),gain=context.createGain();source.buffer=buffers.get(name);gain.gain.value=name==='bonbon_time'?.9:.75;source.connect(gain).connect(effectsBus);source.start();};
    if(buffers.has(name))run();else{const timer=setInterval(()=>{if(buffers.has(name)){clearInterval(timer);run();}},30);setTimeout(()=>clearInterval(timer),2500);}
   }
   function update({sound,active,pots,hidden}){
+   if(lifecycleSuspended)return;
    enabled=sound;wantedHeating=active&&!hidden&&pots.some(p=>p.state==='cooking'||p.state==='ready');
    if(!context)return;const target=enabled&&!hidden?1:0;if(masterTarget!==target){masterTarget=target;master.gain.setTargetAtTime(target,context.currentTime,.08);}
    setLoop('music',hidden?0:.22);setLoop('heating',wantedHeating?.32:0);
@@ -36,7 +39,9 @@
    const heating=loops.get('heating');if(heating&&!wantedHeating&&heating.gain.gain.value<.001){heating.source.stop();loops.delete('heating');}
    if(wantedHeating)startLoop('heating',.32);
   }
-  return {unlock,play,update,setVolume,get volumes(){return {...volumes};},get status(){return {unlocked,enabled,heating:wantedHeating,loops:[...loops.keys()],events:events.slice(),volumes:{...volumes}};}};
+  async function suspendPlayback(){lifecycleSuspended=true;if(context&&context.state!=='closed')await context.suspend();}
+  async function resumePlayback(){lifecycleSuspended=false;if(context&&context.state==='suspended')await context.resume();}
+  return {unlock,play,update,setVolume,suspendPlayback,resumePlayback,get volumes(){return {...volumes};},get status(){return {unlocked,enabled,suspended:lifecycleSuspended,contextState:context?.state,heating:wantedHeating,loops:[...loops.keys()],events:events.slice(),volumes:{...volumes}};}};
  }
  root.BonbonAudio={create};
 })(globalThis);

@@ -1,6 +1,6 @@
 {
   "name": "bonbon-little-kitchen",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": true,
   "scripts": {
     "start": "python -m http.server 8080 --bind 127.0.0.1",

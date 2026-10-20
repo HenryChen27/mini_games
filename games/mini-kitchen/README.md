@@ -20,8 +20,26 @@
 
 部分历史素材生成或比对脚本需要原始 PSD、MOV 或参考视频，应先从本地备份恢复输入；运行游戏与规则测试不依赖这些原始文件。现有素材由项目提供，此次发布不更改其权属。
 
-合集源码位于 `games/mini-kitchen/`，游戏 id 为 `mini-kitchen`，版本 1.5.1。合集打包器生成 `BonbonKitchen-game.zip`，包内入口为 `game/index.html`，顶层 `package.json` 提供 id、runtime、version 元数据。
+合集源码位于 `games/mini-kitchen/`，游戏 id 为 `mini-kitchen`，版本 1.5.2。合集打包器生成 `BonbonKitchen-game.zip`，包内入口为 `game/index.html`，顶层 `package.json` 提供 id、runtime、version 元数据。
 
 ## 宿主接入
 
-`engine.js` 不依赖 DOM；`game.js` 负责界面、存档与输入。浏览器接口为 `window.BonbonKitchen`：`start()`、`getState()`、`getSession()`、`performAction(action)`；事件有 `bonbon:start`、`bonbon:order-complete`、`bonbon:finish`。素材均为相对 URL，可在插件的本地 WebView 中运行，需允许资源加载与 localStorage。当前没有通用宿主的关闭握手接口；宿主应调用游戏内退出保存流程后再关闭页面。
+`engine.js` 不依赖 DOM；`game.js` 负责界面、存档与输入。浏览器接口为 `window.BonbonKitchen`，版本 1.5.2；素材均为相对 URL，宿主需允许 HTTP 资源加载与 localStorage。
+
+- `saveAll()` / `save()`：同步保存当前回合、特效、已提交的快捷键、音量和成绩。返回 `{ok, savedRun, savedAt}`；失败返回 `{ok:false,error}`，不会把内存备份当作持久化成功。
+- `await prepareToClose()`：先保存并回读验证，再冻结计时、特效、输入、自动化和音频。仅在成功后返回 `{ok:true,readyToClose:true,...}`。失败返回 `readyToClose:false`，宿主应保留窗口并展示错误；重复调用可安全等待同一关闭任务。
+- `await resume()`：宿主取消关闭时调用。营业中的回合经过 321 倒计时继续；首页和结算页保持原场景。自动化不会自动重新启用。
+- `getSession()`：挂起时返回 `hostSuspended:true, phase:'suspended', running:false, paused:true`。
+- 原有 `start()`、`getState()`、`performAction(action)` 和 `bonbon:start`、`bonbon:order-complete`、`bonbon:finish` 事件继续可用。挂起期间拒绝游戏操作。
+
+```js
+const result = await window.BonbonKitchen.prepareToClose();
+if (result.ok && result.readyToClose) {
+  // 此时由宿主关闭 WebView。
+} else {
+  // 显示 result.error，保留窗口供重试或恢复。
+}
+// 若用户取消关闭：await window.BonbonKitchen.resume();
+```
+
+页面卸载和隐藏时也会尝试同步保存，但这些事件无法向宿主确认结果，安全关闭仍应等待上述握手。重开 WebView 后点击开始，可选择继续已保存回合。`python scripts/lifecycle_check.py` 检查存储失败、重复关闭、冻结、倒计时恢复和重载存档。

@@ -20,7 +20,7 @@
     {
       "id": "mini-kitchen",
       "name": "邦邦小厨房",
-      "version": "1.5.1",
+      "version": "1.5.2",
       "path": "games/mini-kitchen",
       "archive": "BonbonKitchen-game.zip",
       "runtime": "system-webview"
