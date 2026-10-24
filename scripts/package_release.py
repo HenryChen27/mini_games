@@ -13,6 +13,17 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def export_icon(source, output, base, game_id):
+    """A tiny independent asset lets hosts show icons before downloading a game."""
+    icon=source/'assets/icon.png'
+    if not icon.is_file():return None
+    data=icon.read_bytes()
+    if len(data)>4*1024*1024 or not data.startswith(b'\x89PNG\r\n\x1a\n'):
+        raise ValueError(f'{game_id}: assets/icon.png must be a PNG smaller than 4 MiB')
+    name=game_id+'-icon.png';shutil.copy2(icon,output/name)
+    return {'url':base+'/'+name,'sha256':digest(icon),'size':len(data)}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--version', required=True, help='Collection release version; individual versions live in games.json')
@@ -68,6 +79,8 @@ def main():
         catalog['games'][game['id']] = {**{k: game[k] for k in ['id', 'name', 'version', 'runtime']},
                                         'entry': 'game/index.html', 'size': archive.stat().st_size,
                                         'sha256': digest(archive), 'url': base + '/' + archive.name}
+        icon=export_icon(source,output,base,game['id'])
+        if icon:catalog['games'][game['id']]['icon']=icon
         print(f"{game['id']}: {len(files)} files, {archive.stat().st_size} bytes")
     # Preserve the schema/filenames consumed by existing jellyfish hosts.
     previous = args.compatibility_dir
@@ -94,6 +107,7 @@ def main():
     for name, data in [('games.json', catalog), ('native-desktop-games.json', native), ('desktop-games.json', legacy)]:
         (output / name).write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     assets = [g['archive'] for g in json.loads((ROOT / 'games.json').read_text(encoding='utf-8'))['games']]
+    assets += [g['id']+'-icon.png' for g in json.loads((ROOT/'games.json').read_text(encoding='utf-8'))['games'] if (output/(g['id']+'-icon.png')).is_file()]
     assets += [f'GameLauncher-{platform}.zip' for platform in native['launchers']]
     assets += ['games.json', 'native-desktop-games.json', 'desktop-games.json'] + legacy_assets
     (output / 'SHA256SUMS.txt').write_text(''.join(f'{digest(output / name)}  {name}\n' for name in sorted(assets)), encoding='utf-8')

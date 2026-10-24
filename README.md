@@ -59,3 +59,12 @@ python scripts/package_release.py --version 1.0.0 --compatibility-dir /path/to/p
 发布脚本先创建草稿，上传并核对全部附件后才公开。Release 只保留最新版，旧桌面整包一并附在最新版，原水母下载清单的文件名和结构保持兼容；新增多游戏宿主应使用合集 `games.json`，按游戏 id 选择包。
 
 素材、作者与玩法说明见各游戏 README。
+
+
+## 游戏图标
+
+每款游戏在 `assets/icon.png` 放置专属图标，建议 256×256 或 512×512 的透明正方形 PNG，文件小于 4 MiB。
+
+构建脚本会自动将图片放入资源包的 `game/assets/icon.png`，同时导出 `<游戏ID>-icon.png`，在发布目录 `games.json` 的对应游戏中写入 `icon.url`、`icon.sha256`、`icon.size`，并加入 SHA256SUMS。发布脚本会将图标附件一同上传。
+
+插件可先下载这张小图显示在列表中，游戏安装后优先使用包内图标。图标也用于最小化状态及支持的系统窗口图标。以后新增游戏遵守同一路径即可，不需要逐个平台添加图标代码。缺少图标的旧游戏仍可使用兼容图标。
