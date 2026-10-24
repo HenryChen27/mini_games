@@ -11,6 +11,7 @@
    const bindings=root.BonbonSettings?.state.bindings;if(bindings)write('bonbon-keybindings-v1',bindings);
    const scores=scoreHistory.length?scoreHistory:readScores();write('bonbon-scores',scores);
    write('bonbon-best',scores[0]?.score||0);
+   root.BonbonHostCompat?.checkpoint();
    return {ok:true,savedRun:run.savedRun||!!readSavedRun(),savedAt:new Date().toISOString()};
   }catch(error){return {ok:false,error:error.message||String(error)};}
  }
@@ -38,7 +39,8 @@
   hostSuspended=false;
   return {ok:true,resumed:true};
  }
- Object.assign(api,{version:'1.5.2',saveAll,save:saveAll,prepareToClose,resume,getSession:()=>({...session(),hostSuspended,running:!hostSuspended&&running,paused:hostSuspended||paused,phase:hostSuspended?'suspended':phase})});
+ Object.assign(api,{version:'1.5.3',saveAll,save:saveAll,prepareToClose,resume,getSession:()=>({...session(),hostSuspended,running:!hostSuspended&&running,paused:hostSuspended||paused,phase:hostSuspended?'suspended':phase})});
+ root.BonbonHostCompat?.connect(api);
  root.addEventListener('beforeunload',saveAll);
  root.addEventListener('pagehide',saveAll);
 })(window);

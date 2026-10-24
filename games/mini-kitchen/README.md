@@ -16,15 +16,19 @@
 
 ## 资源与打包
 
-`assets/` 只保留当前加载的 173 个运行资产。原 PSD、参考视频、预览图、旧版生成素材及未使用音效已从工作目录清理；删除前的备份仅在原开发目录的 `.local-backup/unused-assets-before-cleanup.zip`，不提交、不发布。`scripts/clean_assets.py` 可审计资产依赖。
+`assets/` 只保留当前加载的 174 个运行资产。原 PSD、参考视频、预览图、旧版生成素材及未使用音效已从工作目录清理；删除前的备份仅在原开发目录的 `.local-backup/unused-assets-before-cleanup.zip`，不提交、不发布。`scripts/clean_assets.py` 可审计资产依赖。
 
 部分历史素材生成或比对脚本需要原始 PSD、MOV 或参考视频，应先从本地备份恢复输入；运行游戏与规则测试不依赖这些原始文件。现有素材由项目提供，此次发布不更改其权属。
 
-合集源码位于 `games/mini-kitchen/`，游戏 id 为 `mini-kitchen`，版本 1.5.2。合集打包器生成 `BonbonKitchen-game.zip`，包内入口为 `game/index.html`，顶层 `package.json` 提供 id、runtime、version 元数据。
+合集源码位于 `games/mini-kitchen/`，游戏 id 为 `mini-kitchen`，版本 1.5.3。合集打包器生成 `BonbonKitchen-game.zip`，包内入口为 `game/index.html`，顶层 `package.json` 提供 id、runtime、version 元数据。
 
 ## 宿主接入
 
-`engine.js` 不依赖 DOM；`game.js` 负责界面、存档与输入。浏览器接口为 `window.BonbonKitchen`，版本 1.5.2；素材均为相对 URL，宿主需允许 HTTP 资源加载与 localStorage。
+1.5.3 兼容现有加页手记启动器的真实协议：启动器存在时，提供其识别的 `MinesweeperGame` 关闭接口适配器，内部仍调用厨房自身的保存、挂起和恢复函数。普通网页仍使用 `BonbonKitchen`。启动器只导出 `jellyfish.*` 数据，因此关闭前会把厨房的回合、音量、快捷键和成绩封装到 `jellyfish.bonbon.checkpoint-v1`；新 WebView 在游戏初始化前恢复该快照，同时保留原 `bonbon-*` 存储键。快照写入或回读失败会拒绝关闭。结算后快照明确清空未完成回合，避免旧存档复活。
+
+`python scripts/launcher_compat_check.py` 使用原样复制的启动器 `safe-exit.js`，验证真实桥接调用、错误回报、非空存档导出以及全新浏览器配置中的恢复。
+
+`engine.js` 不依赖 DOM；`game.js` 负责界面、存档与输入。浏览器接口为 `window.BonbonKitchen`，版本 1.5.3；素材均为相对 URL，宿主需允许 HTTP 资源加载与 localStorage。
 
 - `saveAll()` / `save()`：同步保存当前回合、特效、已提交的快捷键、音量和成绩。返回 `{ok, savedRun, savedAt}`；失败返回 `{ok:false,error}`，不会把内存备份当作持久化成功。
 - `await prepareToClose()`：先保存并回读验证，再冻结计时、特效、输入、自动化和音频。仅在成功后返回 `{ok:true,readyToClose:true,...}`。失败返回 `readyToClose:false`，宿主应保留窗口并展示错误；重复调用可安全等待同一关闭任务。

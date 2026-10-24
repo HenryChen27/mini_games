@@ -29,7 +29,7 @@ def manifest(name):
 for name in ['assets/sprites.json', 'assets/fx/dish-parts.json', 'assets/fx/generated/manifest-v1.json', 'assets/effects/runtime/manifest.json']:
     manifest(name)
 add('assets/fx/shortcut-outlines.json')
-for name in ['ending_background','heart','button','ranking','fire','bell','correct','settings','rank_page','1st','2nd','3rd']:
+for name in ['ending_background','heart','button','ranking','fire','bell','correct','settings','rank_page','1st','2nd','3rd','icon']:
     add(f'assets/{name}.png')
 for name in ['flame_atlas','steam_atlas','water']: add(f'assets/fx/{name}.png')
 for path in (ROOT/'assets/guide').glob('*.webp'): add(path.relative_to(ROOT).as_posix())
